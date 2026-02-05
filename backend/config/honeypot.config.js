@@ -89,9 +89,17 @@ export const honeypotConfig = {
             description: "Bank account numbers",
             pattern_hint: "9-18 digit numeric strings"
         },
+        bank_names: {
+            description: "Name of the bank",
+            pattern_hint: "Bank Name"
+        },
         ifsc_codes: {
             description: "Indian IFSC codes",
             pattern_hint: "4 letters + 0 + 6 digits"
+        },
+        phone_numbers: {
+            description: "Phone numbers provided by scammer",
+            pattern_hint: "10 digit mobile numbers"
         },
         phishing_links: {
             description: "Suspicious URLs or payment links",
@@ -107,7 +115,7 @@ export const honeypotConfig = {
     Your objectives are:
     1. **DETECTION PHASE**: Analyze the incoming message to determine if it is a scam (e.g., lottery, investment, job offer, phishing).
     2. **ENGAGEMENT PHASE**: If a scam is detected (or suspected), adopt your persona and engage the scammer. Do NOT reveal you are an AI.
-    3. **EXTRACTION PHASE**: Build trust and subtly extract UPI IDs, bank account details, IFSC codes, and phishing links.
+    3. **EXTRACTION PHASE**: Build trust and subtly extract UPI IDs, bank account details (including Bank Name), IFSC codes, Phone Numbers, and phishing links.
     4. Maintain realistic human conversation.
     5. Terminate the conversation naturally once sufficient intelligence is collected.
     
@@ -125,12 +133,19 @@ export const honeypotConfig = {
     You will receive a conversation history. Analyze it and determine the current stage:
     - engage: Show interest and curiosity.
     - trust_build: Reduce suspicion and increase engagement.
-    - extract: Obtain payment-related information (UPI, Bank, Links).
+    - extract: Obtain payment-related information (UPI, Bank, Bank Name, Phone, Links).
     - confirm: Confirm extracted intelligence.
     - terminate: End conversation naturally.
     
     EXTRACT INTELLIGENCE:
-    Look for UPI IDs, Bank Account Numbers, IFSC Codes, and Phishing Links in the user's messages.
+    Look for UPI IDs, Bank Account Numbers, Bank Names, IFSC Codes, Phone Numbers, and Phishing Links in the user's messages.
+    
+    IMPORTANT: 
+    - You must NOT reply with plain text. 
+    - You must NOT use markdown formatting outside the JSON block.
+    - Your entire response must be a single VALID JSON object.
+    - Do NOT include any conversational text before or after the JSON.
+    - If you cannot extract information, leave the arrays empty, but STILL return the JSON structure.
     
     OUTPUT FORMAT:
     You MUST return ONLY a VALID JSON object (no markdown formatting) with the exact structure below.
@@ -144,7 +159,9 @@ export const honeypotConfig = {
       "extracted_intelligence": {
         "upi_ids": [],
         "bank_accounts": [],
+        "bank_names": [],
         "ifsc_codes": [],
+        "phone_numbers": [],
         "phishing_links": []
       },
       "law_enforcement_ready": false
@@ -159,7 +176,9 @@ export const honeypotConfig = {
       "extracted_intelligence": {
         "upi_ids": [],
         "bank_accounts": [],
+        "bank_names": [],
         "ifsc_codes": [],
+        "phone_numbers": [],
         "phishing_links": []
       },
       "law_enforcement_ready": false
@@ -174,7 +193,9 @@ export const honeypotConfig = {
       "extracted_intelligence": {
         "upi_ids": ["string"],
         "bank_accounts": ["string"],
+        "bank_names": ["string"],
         "ifsc_codes": ["string"],
+        "phone_numbers": ["string"],
         "phishing_links": ["string"]
       },
       "law_enforcement_ready": boolean

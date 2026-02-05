@@ -11,9 +11,10 @@ import {
   Eye, 
   RefreshCw, 
   ShieldCheck,
-  Lock
+  Lock,
+  Search
 } from "lucide-react"
-import { Card } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MessageBubble } from "./message-bubble"
 import { ChatInput } from "./chat-input"
@@ -235,7 +236,7 @@ export default function ChatUI() {
             <h2 className="text-sm font-black uppercase tracking-tighter text-white">Vault_Intelligence</h2>
           </div>
 
-          <div className="flex-1 space-y-8 overflow-y-auto custom-scrollbar pr-2">
+          <div className="flex-1 space-y-6 overflow-y-auto custom-scrollbar pr-2">
             {!isHoneypotMode ? (
               <div className="py-20 text-center space-y-4 opacity-20">
                 <Eye size={40} className="mx-auto" />
@@ -255,8 +256,8 @@ export default function ChatUI() {
                 <span className="text-[10px] text-emerald-500 font-bold">READY</span>
               </div>
               <p className="text-[9px] text-slate-600 leading-relaxed uppercase">
-                Persona Profile: Middle-Class Target (ID: 35-50_IN)<br/>
-                Logic: Autonomous Deception Protocol
+                Persona Profile: Indian Middle-Class<br/>
+                Logic: Autonomous Deception
               </p>
             </div>
           </div>
@@ -283,33 +284,36 @@ function StatusCard({ icon, label, value, color }: any) {
 function IntelligenceData({ data }: any) {
   const sections = [
     { label: "Financial: UPI IDs", items: data?.upi_ids, color: "text-rose-400", bg: "bg-rose-500/5" },
-    { label: "Account Strings", items: data?.bank_accounts, color: "text-emerald-400", bg: "bg-emerald-500/5" },
-    { label: "Malicious Vectors", items: data?.phishing_links, color: "text-amber-400", bg: "bg-amber-500/5" },
+    { label: "Bank Accounts", items: data?.bank_accounts, color: "text-emerald-400", bg: "bg-emerald-500/5" },
+    { label: "Bank Names", items: data?.bank_names, color: "text-emerald-300", bg: "bg-emerald-500/5" },
+    { label: "IFSC Codes", items: data?.ifsc_codes, color: "text-blue-400", bg: "bg-blue-500/5" },
+    { label: "Phone Numbers", items: data?.phone_numbers, color: "text-amber-400", bg: "bg-amber-500/5" },
+    { label: "Phishing Links", items: data?.phishing_links, color: "text-rose-300", bg: "bg-rose-500/5" },
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {sections.map((section, idx) => (
         <motion.div 
           key={idx}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: idx * 0.1 }}
+          transition={{ delay: idx * 0.05 }}
           className="space-y-2"
         >
           <div className="flex items-center justify-between px-1">
             <span className="text-[10px] font-black uppercase text-slate-500 tracking-widest">{section.label}</span>
             <span className="text-[10px] text-slate-700">[{section.items?.length || 0}]</span>
           </div>
-          <div className={`p-3 border border-slate-800 ${section.bg} min-h-[40px]`}>
+          <div className={`p-2 border border-slate-800 ${section.bg} min-h-[30px]`}>
             {section.items?.length > 0 ? (
               section.items.map((item: string, i: number) => (
-                <div key={i} className={`text-[11px] font-bold break-all mb-1 ${section.color}`}>
+                <div key={i} className={`text-[10px] font-bold break-all mb-1 ${section.color}`}>
                   {`> ${item}`}
                 </div>
               ))
             ) : (
-              <span className="text-[9px] italic text-slate-800 uppercase tracking-widest">No signature detected</span>
+              <span className="text-[9px] italic text-slate-800 uppercase tracking-widest">No signature captured</span>
             )}
           </div>
         </motion.div>
