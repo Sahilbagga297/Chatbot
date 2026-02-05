@@ -1,59 +1,43 @@
-import ChatUILoader from "@/components/chat/chat-ui-loader"
+import ChatUI from "@/components/chat/chat-ui"
+import { ShieldCheck, Terminal, Activity } from "lucide-react"
 
 export default function Page() {
   return (
-    <>
-      <header className="w-full border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-5xl items-center justify-between p-4 md:p-6">
-          <h1 className="text-pretty text-lg font-semibold text-slate-900">Voice Chatbot</h1>
-          <nav className="text-sm text-muted-foreground">
-            <a href="#chat" className="hover:text-slate-900">
-              Chat
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="mx-auto max-w-5xl px-4 py-8 md:py-12">
-        <div className="grid gap-4 md:grid-cols-2 md:gap-6">
-          <div className="flex flex-col justify-center">
-            <h2 className="text-pretty text-2xl font-semibold leading-tight text-slate-900 md:text-3xl">
-              Talk to your AI assistant
-            </h2>
-            <p className="mt-2 text-pretty text-sm text-muted-foreground md:text-base">
-              Fast, friendly, and clear. Get answers instantly with text and optional voice replies. Simple, accessible,
-              and mobile-friendly.
-            </p>
+    <div className="min-h-screen bg-slate-950 text-slate-200 font-mono selection:bg-emerald-500/30">
+      {/* Top Navigation Bar */}
+      <header className="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div className="max-w-[1600px] mx-auto flex items-center justify-between p-4">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-emerald-500/10 rounded border border-emerald-500/20">
+              <ShieldCheck className="w-6 h-6 text-emerald-500" />
+            </div>
+            <div>
+              <h1 className="text-lg font-bold tracking-tighter text-white uppercase">Aegis-v1</h1>
+              <p className="text-[10px] text-emerald-500/70 leading-none">Scam Honeypot & Intelligence System</p>
+            </div>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div className="h-28 w-full rounded-xl border border-slate-200 bg-white p-4">
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-blue-600/10 ring-1 ring-blue-600/30" />
-                <div className="space-y-1">
-                  <div className="h-3 w-40 rounded animate-shimmer" />
-                  <div className="h-3 w-28 rounded animate-shimmer" />
-                </div>
-              </div>
-              <div className="mt-4 flex items-center gap-3 justify-end">
-                <div className="space-y-1 text-right">
-                  <div className="ml-auto h-3 w-48 rounded bg-blue-600/80" />
-                  <div className="ml-auto h-3 w-28 rounded bg-blue-600/60" />
-                </div>
-                <div className="h-10 w-10 rounded-full bg-emerald-600/10 ring-1 ring-emerald-600/30" />
-              </div>
+          <div className="flex items-center gap-6 text-xs font-medium uppercase tracking-widest">
+            <div className="flex items-center gap-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              System Live
+            </div>
+            <div className="px-3 py-1 border border-slate-700 bg-slate-800 rounded italic lowercase text-slate-400">
+              node_v20.x | gemini-flash
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
-      <a id="chat" />
-      <ChatUILoader />
-
-      <footer className="mt-12 border-t border-slate-200">
-        <div className="mx-auto max-w-5xl p-4 text-center text-xs text-muted-foreground">
-          Built with Next.js App Router, AI SDK, and in-browser Text-to-Speech.
-        </div>
-      </footer>
-    </>
+      <main className="max-w-[1600px] mx-auto p-4 lg:p-6">
+        <ChatUI />
+      </main>
+      
+      {/* Background Grid Pattern */}
+      <div className="fixed inset-0 z-[-1] opacity-[0.03] pointer-events-none" 
+           style={{ backgroundImage: `radial-gradient(#34d399 0.5px, transparent 0.5px)`, backgroundSize: '24px 24px' }} />
+    </div>
   )
 }
