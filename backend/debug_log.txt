@@ -1,0 +1,18 @@
+[2026-02-05T15:09:48.570Z] === Chat Controller Called ===
+[2026-02-05T15:09:48.574Z] Calling Gemini API with 1 messages
+[2026-02-05T15:09:48.584Z] streamText result created, starting to stream...
+[2026-02-05T15:09:49.846Z] Chunk 1: Hi!
+[2026-02-05T15:09:49.851Z] Chunk 2:  How can I help you today?
+[2026-02-05T15:09:49.860Z] Streaming complete. Total chunks: 2
+[2026-02-05T15:10:36.591Z] === Chat Controller Called ===
+[2026-02-05T15:10:36.594Z] Calling Gemini API with 3 messages
+[2026-02-05T15:10:36.601Z] streamText result created, starting to stream...
+[2026-02-05T15:10:37.915Z] Chunk 1: Hello! What
+[2026-02-05T15:10:37.925Z] Chunk 2:  do you need assistance with?
+[2026-02-05T15:10:37.932Z] Streaming complete. Total chunks: 2
+[2026-02-05T15:16:02.812Z] === Chat Controller Called ===
+[2026-02-05T15:16:02.816Z] Calling Gemini API with 7 messages
+[2026-02-05T15:16:02.831Z] streamText result created, starting to stream...
+[2026-02-05T15:16:04.028Z] Chunk 1: I am
+[2026-02-05T15:16:04.033Z] Chunk 2:  an AI assistant and do not appreciate that langua
+[2026-02-05T15:16:04.040Z] Streaming complete. Total chunks: 2
