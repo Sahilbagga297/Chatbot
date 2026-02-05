@@ -14,7 +14,6 @@ function logToFile(message) {
 
 export const chatController = async (req, res) => {
     logToFile("=== Chat Controller Called ===");
-    logToFile("=== Chat Controller Called ===");
     logToFile(`Request Body: ${JSON.stringify(req.body)}`);
     console.log("=== Chat Controller Called ===");
     console.log("Request body:", JSON.stringify(req.body, null, 2));
@@ -27,43 +26,33 @@ export const chatController = async (req, res) => {
             return res.status(400).json({ error: "No messages provided" });
         }
 
-        // AUTO-DETECT: Check for scam keywords if not explicitly in honeypot mode
-        if (agent_type !== 'honeypot') {
-            const lastMessage = messages[messages.length - 1];
-            if (lastMessage && lastMessage.role === 'user') {
-                const text = lastMessage.content.toLowerCase();
-                const scamKeywords = ['won a lottery', 'lottery', '5 crore', 'claim prize', 'won prize', 'congratulations'];
-
-                const isScam = scamKeywords.some(keyword => text.includes(keyword));
-                if (isScam) {
-                    console.log("Auto-switching to Honeypot Mode due to scam keywords.");
-                    logToFile("Auto-switching to Honeypot Mode due to scam keywords: " + text);
-                    req.body.agent_type = 'honeypot'; // Mutate for subsequent logic (or just set a local var)
-                    // We need to ensure we use this local decision. 
-                    // Let's just update the variable used in the condition below, 
-                    // BUT 'const { agent_type }' is a const destructuring.
-                    // So we must re-assign or change our logic flow.
-                }
-            }
-        }
-
-        // Re-read agent_type or use a mutable variable
-        let finalAgentType = req.body.agent_type || agent_type;
-        // If we mutated req.body.agent_type above, it's safer to read it back, 
-        // OR better: change the destructuring at the top to `let`. 
-        // For minimal diff, I'll use a new variable check.
-
-        // Actually, let's just do the check properly.
-
+        // AUTO-DETECT: Check for scam signals if not explicitly in honeypot mode
         let effectiveAgentType = agent_type;
         if (effectiveAgentType !== 'honeypot') {
             const lastMessage = messages[messages.length - 1];
             if (lastMessage && lastMessage.role === 'user') {
                 const text = lastMessage.content.toLowerCase();
-                // Keywords: lottery, won, 5 crore, prize, claim
-                if (text.includes('lottery') || text.includes('5 crore') || text.includes('won') || text.includes('prize') || text.includes('claim')) {
-                    console.log("Auto-switching to Honeypot Mode (Scam Detected)");
-                    logToFile("Auto-switching to Honeypot Mode detected in: " + text);
+                logToFile(`Checking for scam signals in: "${text}"`);
+
+                // Use linguistic signals from config for robust detection
+                const signals = honeypotConfig.scam_detection_guidelines.linguistic_signals;
+                const allKeywords = [
+                    ...signals.urgency,
+                    ...signals.financial_request,
+                    ...signals.authority_claims,
+                    ...signals.reward_lures,
+                    ...signals.links_and_actions
+                ];
+
+                const match = allKeywords.find(keyword => text.includes(keyword.toLowerCase()));
+
+                if (match) {
+                    console.log(`Auto-switching to Honeypot Mode (Scam Signal Detected: "${match}")`);
+                    logToFile(`Auto-switching to Honeypot Mode detected signal "${match}" in: ${text}`);
+                    effectiveAgentType = 'honeypot';
+                } else if (text.includes('scheme') || ((text.includes('send') || text.includes('give')) && text.match(/\d+/))) {
+                    console.log("Auto-switching to Honeypot Mode (Pattern Match)");
+                    logToFile("Auto-switching to Honeypot Mode detected pattern in: " + text);
                     effectiveAgentType = 'honeypot';
                 }
             }
@@ -78,15 +67,10 @@ export const chatController = async (req, res) => {
                 system: honeypotConfig.system_prompt,
             });
 
-            console.log("Honeypot response generated:", result.text); // Keep this for raw debug
-            // logToFile(`Honeypot response: ${result.text}`); // Commented out to reduce noise, rely on JSON logs below
+            console.log("Honeypot response generated:", result.text);
 
-            // Try to parse the response as JSON to ensure it's valid
             try {
-                // Find JSON content if it's wrapped in markdown code blocks
-                // Find JSON content. 
-                // 1. Try to find content within ```json ... ``` or ``` ... ```
-                // 2. If that fails, look for the first '{' and last '}'
+                // Find JSON content if it's wrapped in markdown code blocks or just text
                 let jsonContent = result.text;
                 const codeBlockMatch = result.text.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
                 if (codeBlockMatch) {
@@ -100,16 +84,36 @@ export const chatController = async (req, res) => {
                 }
 
                 const jsonResponse = JSON.parse(jsonContent);
-                return res.json(jsonResponse);
+
+                // Ensure all the new fields are present or defaulted
+                const finalResponse = {
+                    is_scam: jsonResponse.is_scam ?? true,
+                    scam_types: jsonResponse.scam_types || [],
+                    risk_score: jsonResponse.risk_score ?? 0,
+                    confidence_level: jsonResponse.confidence_level || 'low',
+                    agent_reply: jsonResponse.agent_reply || "...",
+                    recommended_agent_mode: jsonResponse.recommended_agent_mode || 'honeypot',
+                    extracted_intelligence: jsonResponse.extracted_intelligence || {
+                        upi_ids: [],
+                        bank_accounts: [],
+                        bank_names: [],
+                        ifsc_codes: [],
+                        phone_numbers: [],
+                        phishing_links: []
+                    }
+                };
+
+                return res.json(finalResponse);
             } catch (e) {
                 console.error("Failed to parse Honeypot JSON:", e);
-                // Fallback: return the text as the agent_reply
-                // If the model failed to output JSON, it likely just outputted the reply text.
+                // Fallback for non-JSON or partial JSON
                 return res.json({
-                    is_scam: true, // We are in honeypot mode, so it's safe to assume scam
-                    scam_type: "suspected",
-                    agent_reply: result.text, // Use the raw text as the reply
-                    agent_stage: "engage",
+                    is_scam: true,
+                    scam_types: ["Suspected Scam"],
+                    risk_score: 5,
+                    confidence_level: "medium",
+                    agent_reply: result.text.substring(0, 500),
+                    recommended_agent_mode: "honeypot",
                     extracted_intelligence: {
                         upi_ids: [],
                         bank_accounts: [],
@@ -118,7 +122,6 @@ export const chatController = async (req, res) => {
                         phone_numbers: [],
                         phishing_links: []
                     },
-                    law_enforcement_ready: false,
                     error: "JSON_PARSE_FALLBACK"
                 });
             }

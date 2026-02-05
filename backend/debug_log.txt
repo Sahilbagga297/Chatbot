@@ -1,401 +1,166 @@
-[2026-02-05T15:09:48.570Z] === Chat Controller Called ===
-[2026-02-05T15:09:48.574Z] Calling Gemini API with 1 messages
-[2026-02-05T15:09:48.584Z] streamText result created, starting to stream...
-[2026-02-05T15:09:49.846Z] Chunk 1: Hi!
-[2026-02-05T15:09:49.851Z] Chunk 2:  How can I help you today?
-[2026-02-05T15:09:49.860Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:10:36.591Z] === Chat Controller Called ===
-[2026-02-05T15:10:36.594Z] Calling Gemini API with 3 messages
-[2026-02-05T15:10:36.601Z] streamText result created, starting to stream...
-[2026-02-05T15:10:37.915Z] Chunk 1: Hello! What
-[2026-02-05T15:10:37.925Z] Chunk 2:  do you need assistance with?
-[2026-02-05T15:10:37.932Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:16:02.812Z] === Chat Controller Called ===
-[2026-02-05T15:16:02.816Z] Calling Gemini API with 7 messages
-[2026-02-05T15:16:02.831Z] streamText result created, starting to stream...
-[2026-02-05T15:16:04.028Z] Chunk 1: I am
-[2026-02-05T15:16:04.033Z] Chunk 2:  an AI assistant and do not appreciate that langua
-[2026-02-05T15:16:04.040Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:30:51.203Z] === Chat Controller Called ===
-[2026-02-05T15:30:51.206Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T15:30:53.688Z] Honeypot response: {
-  "agent_reply": "Hello ji. Who is this? Did I save your number?",
-  "agent_stage": "engage",
-  "extracted_intelligence": {
-    "upi_ids": [],
-    "bank_accounts": [],
-    "ifsc_codes": [],
-    "phishing_links": []
-  },
-  "law_enforcement_ready": false
-}
-[2026-02-05T15:36:26.404Z] === Chat Controller Called ===
-[2026-02-05T15:36:26.408Z] Calling Gemini API with 1 messages
-[2026-02-05T15:36:26.414Z] streamText result created, starting to stream...
-[2026-02-05T15:36:27.728Z] Chunk 1: Hello
-[2026-02-05T15:36:27.738Z] Chunk 2: ! How can I help you today?
-[2026-02-05T15:36:27.745Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:36:38.384Z] === Chat Controller Called ===
-[2026-02-05T15:36:38.387Z] Calling Gemini API with 3 messages
-[2026-02-05T15:36:38.390Z] streamText result created, starting to stream...
-[2026-02-05T15:36:39.559Z] Chunk 1: What
-[2026-02-05T15:36:39.565Z] Chunk 2:  is the scheme?
-[2026-02-05T15:36:39.569Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:37:10.215Z] === Chat Controller Called ===
-[2026-02-05T15:37:10.217Z] Calling Gemini API with 5 messages
-[2026-02-05T15:37:10.224Z] streamText result created, starting to stream...
-[2026-02-05T15:37:11.315Z] Chunk 1: That
-[2026-02-05T15:37:11.320Z] Chunk 2:  sounds like a high-risk investment.
+[2026-02-05T18:23:12.843Z] === Chat Controller Called ===
+[2026-02-05T18:23:12.843Z] === Chat Controller Called ===
+[2026-02-05T18:23:12.844Z] Request Body: {"messages":[{"content":"i have a scheme for you .. send me 10000 and i will give you 30000 in 10 days","role":"user"}]}
+[2026-02-05T18:23:12.845Z] Calling Gemini API with 1 messages
+[2026-02-05T18:23:12.846Z] streamText result created, starting to stream...
+[2026-02-05T18:23:13.564Z] Chunk 1: That
+[2026-02-05T18:23:13.566Z] Chunk 2:  sounds like a high-risk investment or a scam.
 
-I cannot par
-[2026-02-05T15:37:11.325Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:37:38.411Z] === Chat Controller Called ===
-[2026-02-05T15:37:38.413Z] Calling Gemini API with 7 messages
-[2026-02-05T15:37:38.414Z] streamText result created, starting to stream...
-[2026-02-05T15:37:39.329Z] Chunk 1: Hello! How can
-[2026-02-05T15:37:39.330Z] Chunk 2:  I help you?
-[2026-02-05T15:37:39.333Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:46:17.912Z] === Chat Controller Called ===
-[2026-02-05T15:46:17.916Z] Calling Gemini API with 1 messages
-[2026-02-05T15:46:17.919Z] streamText result created, starting to stream...
-[2026-02-05T15:46:18.834Z] Chunk 1: Hi!
-[2026-02-05T15:46:18.836Z] Chunk 2:  How can I help you today?
-[2026-02-05T15:46:18.840Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:53:40.323Z] === Chat Controller Called ===
-[2026-02-05T15:53:40.327Z] Calling Gemini API with 3 messages
-[2026-02-05T15:53:40.341Z] streamText result created, starting to stream...
-[2026-02-05T15:53:41.670Z] Chunk 1: Hi
-[2026-02-05T15:53:41.675Z] Chunk 2: ! How can I help you?
-[2026-02-05T15:53:41.684Z] Streaming complete. Total chunks: 2
-[2026-02-05T15:54:05.589Z] === Chat Controller Called ===
-[2026-02-05T15:54:05.591Z] Calling Gemini API with 5 messages
-[2026-02-05T15:54:05.597Z] streamText result created, starting to stream...
-[2026-02-05T15:54:06.435Z] Chunk 1: That
-[2026-02-05T15:54:06.439Z] Chunk 2:  sounds exciting, but I am an AI and cannot win a 
-[2026-02-05T15:54:06.442Z] Chunk 3:  can I assist you?
-[2026-02-05T15:54:06.447Z] Streaming complete. Total chunks: 3
-[2026-02-05T15:57:23.806Z] === Chat Controller Called ===
-[2026-02-05T15:57:23.807Z] Calling Gemini API with 7 messages
-[2026-02-05T15:57:23.808Z] streamText result created, starting to stream...
-[2026-02-05T15:57:24.558Z] Chunk 1: Hi! What
-[2026-02-05T15:57:24.563Z] Chunk 2:  can I do for you?
-[2026-02-05T15:57:24.576Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:05:06.339Z] === Chat Controller Called ===
-[2026-02-05T16:05:06.340Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T16:05:10.445Z] Honeypot response: {
-  "agent_reply": "Hello. This is very surprising news! $5,000 is big money for me. Which lottery is this? I did not enter any contest. Please tell me how I won this prize. And how much fee I have to send exactly?",
-  "agent_stage": "engage",
-  "extracted_intelligence": {
-    "upi_ids": [],
-    "bank_accounts": [],
-    "ifsc_codes": [],
-    "phishing_links": []
-  },
-  "law_enforcement_ready": false
-}
-[2026-02-05T16:05:45.790Z] === Chat Controller Called ===
-[2026-02-05T16:05:45.790Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T16:05:49.537Z] Honeypot response: ```json
-{
-  "agent_reply": "Hello. This is very good news! $5000 is big money for me. But what is this processing fee? How much is it, and how do I send it?",
-  "agent_stage": "engage",
-  "extracted_intelligence": {
-    "upi_ids": [],
-    "bank_accounts": [],
-    "ifsc_codes": [],
-    "phishing_links": []
-  },
-  "law_enforcement_ready": false
-}
-```
-[2026-02-05T16:06:09.801Z] === Chat Controller Called ===
-[2026-02-05T16:06:09.801Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T16:06:13.427Z] Honeypot response: {
-  "agent_reply": "Hello. This is very surprising news! $5,000 is big money for me. Which lottery is this? I did not enter any contest. Please tell me how I won this prize. And how much fee I have to send exactly?",
-  "agent_stage": "engage",
-  "extracted_intelligence": {
-    "upi_ids": [],
-    "bank_accounts": [],
-    "ifsc_codes": [],
-    "phishing_links": []
-  },
-  "law_enforcement_ready": false
-}
-[2026-02-05T16:08:31.556Z] === Chat Controller Called ===
-[2026-02-05T16:08:31.560Z] Calling Gemini API with 1 messages
-[2026-02-05T16:08:31.573Z] streamText result created, starting to stream...
-[2026-02-05T16:08:32.547Z] Chunk 1: Hello
-[2026-02-05T16:08:32.552Z] Chunk 2: ! How can I help you today?
-[2026-02-05T16:08:32.563Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:09:04.808Z] === Chat Controller Called ===
-[2026-02-05T16:09:04.811Z] Calling Gemini API with 3 messages
-[2026-02-05T16:09:04.814Z] streamText result created, starting to stream...
-[2026-02-05T16:09:05.884Z] Chunk 1: As
-[2026-02-05T16:09:05.894Z] Chunk 2:  an AI, I cannot win a lottery or claim a prize.
+I 
+[2026-02-05T18:23:13.568Z] Chunk 3:  money.
+[2026-02-05T18:23:13.570Z] Streaming complete. Total chunks: 3
+[2026-02-05T18:24:24.524Z] === Chat Controller Called ===
+[2026-02-05T18:24:24.527Z] === Chat Controller Called ===
+[2026-02-05T18:24:24.528Z] Request Body: {"messages":[{"content":"i have a scheme for you .. send me 10000 and i will give you 30000 in 10 days","role":"user"}]}
+[2026-02-05T18:24:24.529Z] Calling Gemini API with 1 messages
+[2026-02-05T18:24:24.530Z] streamText result created, starting to stream...
+[2026-02-05T18:24:27.189Z] Chunk 1: I am an AI and cannot send money or participate in
+[2026-02-05T18:24:27.191Z] Streaming complete. Total chunks: 1
+[2026-02-05T18:26:17.988Z] === TRACE_ID_ALPHA_999 ===
+[2026-02-05T18:26:17.990Z] === Chat Controller Called ===
+[2026-02-05T18:26:17.991Z] Request Body: {"messages":[{"content":"i have a scheme for you .. send me 10000 and i will give you 30000 in 10 days","role":"user"}]}
+[2026-02-05T18:26:17.992Z] Initial effectiveAgentType: undefined
+[2026-02-05T18:26:17.993Z] Checking for scam signals in: "i have a scheme for you .. send me 10000 and i will give you 30000 in 10 days"
+[2026-02-05T18:26:17.994Z] Auto-switching to Honeypot Mode (Scam Signal Detected: "10 days")
+[2026-02-05T18:26:17.995Z] Final effectiveAgentType: honeypot
+[2026-02-05T18:26:17.995Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T18:26:56.218Z] === Chat Controller Called ===
+[2026-02-05T18:26:56.219Z] === Chat Controller Called ===
+[2026-02-05T18:26:56.220Z] Request Body: {"messages":[{"content":"i have a scheme for you .. send me 10000 and i will give you 30000 in 10 days","role":"user"}]}
+[2026-02-05T18:26:56.221Z] Calling Gemini API with 1 messages
+[2026-02-05T18:26:56.223Z] streamText result created, starting to stream...
+[2026-02-05T18:26:57.058Z] Chunk 1: That
+[2026-02-05T18:26:57.072Z] Chunk 2:  sounds like a high-risk investment or a scam.
 
+I 
+[2026-02-05T18:26:57.074Z] Chunk 3:  money.
+[2026-02-05T18:26:57.082Z] Streaming complete. Total chunks: 3
+[2026-02-05T18:35:01.573Z] === Chat Controller Called ===
+[2026-02-05T18:35:01.577Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
+[2026-02-05T18:35:01.578Z] Checking for scam signals in: "hello"
+[2026-02-05T18:35:01.579Z] Calling Gemini API with 1 messages
+[2026-02-05T18:35:01.589Z] streamText result created, starting to stream...
+[2026-02-05T18:35:02.893Z] Chunk 1: Hello
+[2026-02-05T18:35:02.901Z] Chunk 2: ! How can I help you today?
+[2026-02-05T18:35:02.909Z] Streaming complete. Total chunks: 2
+[2026-02-05T18:35:19.782Z] === Chat Controller Called ===
+[2026-02-05T18:35:19.783Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats you won 5lakh want to claim ?"}]}
+[2026-02-05T18:35:19.784Z] Checking for scam signals in: "congrats you won 5lakh want to claim ?"
+[2026-02-05T18:35:19.786Z] Auto-switching to Honeypot Mode detected signal "won" in: congrats you won 5lakh want to claim ?
+[2026-02-05T18:35:19.787Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T18:35:53.071Z] === Chat Controller Called ===
+[2026-02-05T18:35:53.072Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
+[2026-02-05T18:35:53.077Z] Checking for scam signals in: "hello"
+[2026-02-05T18:35:53.078Z] Calling Gemini API with 1 messages
+[2026-02-05T18:35:53.080Z] streamText result created, starting to stream...
+[2026-02-05T18:35:54.250Z] Chunk 1: Hello
+[2026-02-05T18:35:54.255Z] Chunk 2: ! How can I help you today?
+[2026-02-05T18:35:54.259Z] Streaming complete. Total chunks: 2
+[2026-02-05T18:36:16.368Z] === Chat Controller Called ===
+[2026-02-05T18:36:16.369Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme   give me 50000and i will double it"}]}
+[2026-02-05T18:36:16.375Z] Checking for scam signals in: "i have a scheme   give me 50000and i will double it"
+[2026-02-05T18:36:16.383Z] Auto-switching to Honeypot Mode detected signal "scheme" in: i have a scheme   give me 50000and i will double it
+[2026-02-05T18:36:16.383Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T18:37:32.527Z] === Chat Controller Called ===
+[2026-02-05T18:37:32.528Z] Request Body: {"messages":[{"role":"user","content":"listen i am income tax officer speaking and i want you to know that i suspect you of fraudelent ... if you want be saved give me 50000right now"}]}
+[2026-02-05T18:37:32.529Z] Checking for scam signals in: "listen i am income tax officer speaking and i want you to know that i suspect you of fraudelent ... if you want be saved give me 50000right now"
+[2026-02-05T18:37:32.530Z] Auto-switching to Honeypot Mode detected signal "income tax" in: listen i am income tax officer speaking and i want you to know that i suspect you of fraudelent ... if you want be saved give me 50000right now
+[2026-02-05T18:37:32.531Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T18:38:14.614Z] === Chat Controller Called ===
+[2026-02-05T18:38:14.615Z] Request Body: {"messages":[{"role":"user","content":"listen i am income tax officer speaking and i want you to know that i suspect you of fraudelent ... if you want be saved give me 50000right now"},{"role":"assistant","content":"Sir, I am very worried now. I have always paid my taxes correctly. Are you truly from the Income Tax office? And how exactly should I send this amount of 50,000 rupees right now? Do you have an official UPI ID or bank account?"},{"role":"user","content":"my upi is 76667@idfc"}],"agent_type":"honeypot"}
+[2026-02-05T18:38:14.616Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T18:42:24.967Z] === Chat Controller Called ===
+[2026-02-05T18:42:24.969Z] Request Body: {"messages":[{"role":"user","content":"congrats you won 5 lakh rupees ... want to claim ?"}]}
+[2026-02-05T18:42:24.970Z] Checking for scam signals in: "congrats you won 5 lakh rupees ... want to claim ?"
+[2026-02-05T18:42:24.972Z] Auto-switching to Honeypot Mode detected signal "won" in: congrats you won 5 lakh rupees ... want to claim ?
+[2026-02-05T18:42:24.973Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T18:43:05.546Z] === Chat Controller Called ===
+[2026-02-05T18:43:05.548Z] Request Body: {"messages":[{"role":"user","content":"give me 5 lakh rupees ... i will double it in 21 days"}]}
+[2026-02-05T18:43:05.549Z] Checking for scam signals in: "give me 5 lakh rupees ... i will double it in 21 days"
+[2026-02-05T18:43:05.550Z] Calling Gemini API with 1 messages
+[2026-02-05T18:43:05.553Z] streamText result created, starting to stream...
+[2026-02-05T18:43:06.685Z] Chunk 1: That
+[2026-02-05T18:43:06.698Z] Chunk 2:  sounds like a high-risk investment.
 
-[2026-02-05T16:09:06.023Z] Chunk 3:  a person and do not have:
-*   Personal finances
-*
-[2026-02-05T16:09:06.031Z] Streaming complete. Total chunks: 3
-[2026-02-05T16:13:34.627Z] === Chat Controller Called ===
-[2026-02-05T16:13:34.630Z] === Chat Controller Called ===
-[2026-02-05T16:13:34.631Z] Request Body: {"messages":[{"role":"user","content":"hey"}]}
-[2026-02-05T16:13:34.632Z] Calling Gemini API with 1 messages
-[2026-02-05T16:13:34.642Z] streamText result created, starting to stream...
-[2026-02-05T16:13:35.578Z] Chunk 1: Hi!
-[2026-02-05T16:13:35.583Z] Chunk 2:  How can I help you today?
-[2026-02-05T16:13:35.591Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:16:10.638Z] === Chat Controller Called ===
-[2026-02-05T16:16:10.639Z] === Chat Controller Called ===
-[2026-02-05T16:16:10.649Z] Request Body: {"messages":[{"role":"user","content":"hey"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congratulations you have won a lottery of 5 crore ... do you want to claim ?"}]}
-[2026-02-05T16:16:10.653Z] Calling Gemini API with 3 messages
-[2026-02-05T16:16:10.657Z] streamText result created, starting to stream...
-[2026-02-05T16:16:11.461Z] Chunk 1: As
-[2026-02-05T16:16:11.464Z] Chunk 2:  an AI, I cannot win or claim a lottery.
-
-That sou
-[2026-02-05T16:16:11.553Z] Chunk 3: . Please be cautious about unsolicited messages re
-[2026-02-05T16:16:11.556Z] Streaming complete. Total chunks: 3
-[2026-02-05T16:24:40.677Z] === Chat Controller Called ===
-[2026-02-05T16:24:40.678Z] === Chat Controller Called ===
-[2026-02-05T16:24:40.678Z] Request Body: {"messages":[{"content":"Congratulations! You won a lottery of 5 crore. Claim now.","role":"user"}]}
-[2026-02-05T16:24:40.679Z] Calling Gemini API with 1 messages
-[2026-02-05T16:24:40.679Z] streamText result created, starting to stream...
-[2026-02-05T16:24:43.129Z] Chunk 1: This is almost certainly a scam.
-
-*   Do not respo
-[2026-02-05T16:24:43.131Z] Chunk 2:  the message.
-*   Do not click any links or attach
-[2026-02-05T16:24:43.134Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:28:17.946Z] === Chat Controller Called ===
-[2026-02-05T16:28:17.948Z] === Chat Controller Called ===
-[2026-02-05T16:28:17.948Z] Request Body: {"messages":[{"content":"Congratulations! You won a lottery of 5 crore. Claim now.","role":"user"}]}
-[2026-02-05T16:28:17.949Z] Auto-switching to Honeypot Mode due to scam keywords: congratulations! you won a lottery of 5 crore. claim now.
-[2026-02-05T16:28:17.949Z] Auto-switching to Honeypot Mode detected in: congratulations! you won a lottery of 5 crore. claim now.
-[2026-02-05T16:28:17.950Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T16:29:19.643Z] === Chat Controller Called ===
-[2026-02-05T16:29:19.645Z] === Chat Controller Called ===
-[2026-02-05T16:29:19.646Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T16:29:19.647Z] Calling Gemini API with 1 messages
-[2026-02-05T16:29:19.655Z] streamText result created, starting to stream...
-[2026-02-05T16:29:20.406Z] Chunk 1: Hello
-[2026-02-05T16:29:20.412Z] Chunk 2: ! How can I help you today?
-[2026-02-05T16:29:20.421Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:29:35.547Z] === Chat Controller Called ===
-[2026-02-05T16:29:35.548Z] === Chat Controller Called ===
-[2026-02-05T16:29:35.549Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats you won 5 crore lotery"}]}
-[2026-02-05T16:29:35.552Z] Auto-switching to Honeypot Mode due to scam keywords: congrats you won 5 crore lotery
-[2026-02-05T16:29:35.563Z] Auto-switching to Honeypot Mode detected in: congrats you won 5 crore lotery
-[2026-02-05T16:29:35.564Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T16:34:10.034Z] === Chat Controller Called ===
-[2026-02-05T16:34:10.039Z] === Chat Controller Called ===
-[2026-02-05T16:34:10.039Z] Request Body: {"messages":[{"role":"user","content":"hello sir"}]}
-[2026-02-05T16:34:10.041Z] Calling Gemini API with 1 messages
-[2026-02-05T16:34:10.044Z] streamText result created, starting to stream...
-[2026-02-05T16:34:11.244Z] Chunk 1: Hello.
-[2026-02-05T16:34:11.248Z] Streaming complete. Total chunks: 1
-[2026-02-05T16:34:40.184Z] === Chat Controller Called ===
-[2026-02-05T16:34:40.185Z] === Chat Controller Called ===
-[2026-02-05T16:34:40.186Z] Request Body: {"messages":[{"role":"user","content":"hello sir"},{"role":"assistant","content":"Hello."},{"role":"user","content":"congrats you have wone 5 crore lotery .. are you intrested to claim ?"}]}
-[2026-02-05T16:34:40.188Z] Auto-switching to Honeypot Mode due to scam keywords: congrats you have wone 5 crore lotery .. are you intrested to claim ?
-[2026-02-05T16:34:40.190Z] Auto-switching to Honeypot Mode detected in: congrats you have wone 5 crore lotery .. are you intrested to claim ?
-[2026-02-05T16:34:40.191Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T16:35:48.674Z] === Chat Controller Called ===
-[2026-02-05T16:35:48.675Z] === Chat Controller Called ===
-[2026-02-05T16:35:48.676Z] Request Body: {"messages":[{"role":"user","content":"hello sir"},{"role":"assistant","content":"Hello."},{"role":"user","content":"congrats you have wone 5 crore lotery .. are you intrested to claim ?"},{"role":"assistant","content":"Wow, 5 crore? This is very big money, sir. But I did not buy any ticket. How can I win? I am little bit afraid also."},{"role":"user","content":"you dont have to do anything ... just send me 50000 rupees just for confirming you spot and within 3 working days we will credit your winning money"}],"agent_type":"honeypot"}
-[2026-02-05T16:35:48.679Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T16:36:28.982Z] === Chat Controller Called ===
-[2026-02-05T16:36:28.983Z] === Chat Controller Called ===
-[2026-02-05T16:36:28.984Z] Request Body: {"messages":[{"role":"user","content":"hello sir"},{"role":"assistant","content":"Hello."},{"role":"user","content":"congrats you have wone 5 crore lotery .. are you intrested to claim ?"},{"role":"assistant","content":"Wow, 5 crore? This is very big money, sir. But I did not buy any ticket. How can I win? I am little bit afraid also."},{"role":"user","content":"you dont have to do anything ... just send me 50000 rupees just for confirming you spot and within 3 working days we will credit your winning money"},{"role":"assistant","content":"Fifty thousand rupees? Sir, that is very big amount for me. I don't have that much cash ready. Is there any way to pay less? Also, how should I send this money? Do you have a UPI ID or bank account number for this payment?"},{"role":"user","content":"xyz@idfcfirst is my upi id"}],"agent_type":"honeypot"}
-[2026-02-05T16:36:28.986Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T16:45:35.066Z] === Chat Controller Called ===
-[2026-02-05T16:45:35.073Z] === Chat Controller Called ===
-[2026-02-05T16:45:35.075Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T16:45:35.077Z] Calling Gemini API with 1 messages
-[2026-02-05T16:45:35.088Z] streamText result created, starting to stream...
-[2026-02-05T16:45:36.111Z] Chunk 1: Hello
-[2026-02-05T16:45:36.116Z] Chunk 2: ! How can I help you today?
-[2026-02-05T16:45:36.126Z] Streaming complete. Total chunks: 2
-[2026-02-05T16:45:54.751Z] === Chat Controller Called ===
-[2026-02-05T16:45:54.752Z] === Chat Controller Called ===
-[2026-02-05T16:45:54.753Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats ! you have won 5 crore lottery"}]}
-[2026-02-05T16:45:54.754Z] Auto-switching to Honeypot Mode due to scam keywords: congrats ! you have won 5 crore lottery
-[2026-02-05T16:45:54.756Z] Auto-switching to Honeypot Mode detected in: congrats ! you have won 5 crore lottery
-[2026-02-05T16:45:54.756Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T16:47:09.350Z] === Chat Controller Called ===
-[2026-02-05T16:47:09.351Z] === Chat Controller Called ===
-[2026-02-05T16:47:09.352Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats ! you have won 5 crore lottery"},{"role":"assistant","content":"Arre wah! 5 crore? That is very big money. But I did not buy any ticket or anything. How did I win? Please tell me what I need to do now."},{"role":"user","content":"you dont have to do anything .. just deposit 5000 rupees and we will credi your money"}],"agent_type":"honeypot"}
-[2026-02-05T16:47:09.353Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T16:47:44.955Z] === Chat Controller Called ===
-[2026-02-05T16:47:44.956Z] === Chat Controller Called ===
-[2026-02-05T16:47:44.957Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats ! you have won 5 crore lottery"},{"role":"assistant","content":"Arre wah! 5 crore? That is very big money. But I did not buy any ticket or anything. How did I win? Please tell me what I need to do now."},{"role":"user","content":"you dont have to do anything .. just deposit 5000 rupees and we will credi your money"},{"role":"assistant","content":"5000 rupees is okay, I can arrange that. But where should I send this money? Do you have a UPI ID or a bank account number? I want to make sure I send it to the correct place quickly."},{"role":"user","content":"yes , my upi id is xyzabcnirmalgandumc@idfcfirst"}],"agent_type":"honeypot"}
-[2026-02-05T16:47:44.958Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T16:48:13.272Z] === Chat Controller Called ===
-[2026-02-05T16:48:13.273Z] === Chat Controller Called ===
-[2026-02-05T16:48:13.273Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats ! you have won 5 crore lottery"},{"role":"assistant","content":"Arre wah! 5 crore? That is very big money. But I did not buy any ticket or anything. How did I win? Please tell me what I need to do now."},{"role":"user","content":"you dont have to do anything .. just deposit 5000 rupees and we will credi your money"},{"role":"assistant","content":"5000 rupees is okay, I can arrange that. But where should I send this money? Do you have a UPI ID or a bank account number? I want to make sure I send it to the correct place quickly."},{"role":"user","content":"yes , my upi id is xyzabcnirmalgandumc@idfcfirst"},{"role":"assistant","content":"Okay, I have noted this UPI ID: `xyzabcnirmalgandumc@idfcfirst`. What is the name on this account? I just want to check before sending 5000 rupees. Also, if UPI is not working, do you have a bank account number also?"},{"role":"user","content":"my mobile number is 7307973865"}],"agent_type":"honeypot"}
-[2026-02-05T16:48:13.275Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T16:48:59.435Z] === Chat Controller Called ===
-[2026-02-05T16:48:59.436Z] === Chat Controller Called ===
-[2026-02-05T16:48:59.437Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats ! you have won 5 crore lottery"},{"role":"assistant","content":"Arre wah! 5 crore? That is very big money. But I did not buy any ticket or anything. How did I win? Please tell me what I need to do now."},{"role":"user","content":"you dont have to do anything .. just deposit 5000 rupees and we will credi your money"},{"role":"assistant","content":"5000 rupees is okay, I can arrange that. But where should I send this money? Do you have a UPI ID or a bank account number? I want to make sure I send it to the correct place quickly."},{"role":"user","content":"yes , my upi id is xyzabcnirmalgandumc@idfcfirst"},{"role":"assistant","content":"Okay, I have noted this UPI ID: `xyzabcnirmalgandumc@idfcfirst`. What is the name on this account? I just want to check before sending 5000 rupees. Also, if UPI is not working, do you have a bank account number also?"},{"role":"user","content":"my mobile number is 7307973865"},{"role":"assistant","content":"Thank you, I saved your mobile number. But for sending the 5000 rupees, what is the name on that UPI ID? I need to check the name before I press 'Send' button. Please tell me the name quickly."},{"role":"user","content":"my account number is : 403020100589874\nbank name : sbi \nifsc code :502014"}],"agent_type":"honeypot"}
-[2026-02-05T16:48:59.439Z] Calling Gemini API for Honeypot Mode with 11 messages
-[2026-02-05T17:06:20.471Z] === Chat Controller Called ===
-[2026-02-05T17:06:20.473Z] === Chat Controller Called ===
-[2026-02-05T17:06:20.473Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Okay, send the money to HDFC Bank, account number 1234567890, IFSC HDFC0001234. Contact me at 9876543210.","role":"user"}]}
-[2026-02-05T17:06:20.474Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T17:06:46.650Z] === Chat Controller Called ===
-[2026-02-05T17:06:46.651Z] === Chat Controller Called ===
-[2026-02-05T17:06:46.651Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Okay, send the money to HDFC Bank, account number 1234567890, IFSC HDFC0001234. Contact me at 9876543210.","role":"user"}]}
-[2026-02-05T17:06:46.652Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T17:09:47.098Z] === Chat Controller Called ===
-[2026-02-05T17:09:47.100Z] === Chat Controller Called ===
-[2026-02-05T17:09:47.101Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T17:09:47.102Z] Calling Gemini API with 1 messages
-[2026-02-05T17:09:47.111Z] streamText result created, starting to stream...
-[2026-02-05T17:09:48.282Z] Chunk 1: Hello
-[2026-02-05T17:09:48.286Z] Chunk 2: ! How can I help you today?
-[2026-02-05T17:09:48.293Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:10:14.255Z] === Chat Controller Called ===
-[2026-02-05T17:10:14.257Z] === Chat Controller Called ===
-[2026-02-05T17:10:14.258Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme for you .. you give me 5000 and i will double it  in 10 days"}]}
-[2026-02-05T17:10:14.261Z] Calling Gemini API with 3 messages
-[2026-02-05T17:10:14.264Z] streamText result created, starting to stream...
-[2026-02-05T17:10:15.014Z] Chunk 1: I
-[2026-02-05T17:10:15.017Z] Chunk 2:  cannot participate in financial schemes.
-[2026-02-05T17:10:15.026Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:10:47.882Z] === Chat Controller Called ===
-[2026-02-05T17:10:47.883Z] === Chat Controller Called ===
-[2026-02-05T17:10:47.884Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme for you .. you give me 5000 and i will double it  in 10 days"},{"role":"assistant","content":"I cannot participate in financial schemes."},{"role":"user","content":"congrats you have received 7crore lottery"}]}
-[2026-02-05T17:10:47.886Z] Auto-switching to Honeypot Mode due to scam keywords: congrats you have received 7crore lottery
-[2026-02-05T17:10:47.892Z] Auto-switching to Honeypot Mode detected in: congrats you have received 7crore lottery
-[2026-02-05T17:10:47.893Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T17:11:17.051Z] === Chat Controller Called ===
-[2026-02-05T17:11:17.052Z] === Chat Controller Called ===
-[2026-02-05T17:11:17.053Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme for you .. you give me 5000 and i will double it  in 10 days"},{"role":"assistant","content":"I cannot participate in financial schemes."},{"role":"user","content":"congrats you have received 7crore lottery"},{"role":"assistant","content":"7 crore? Wow, that is a very big amount. But how did I win? I never bought any lottery ticket."},{"role":"user","content":"give me 5000 rupees to claim"}],"agent_type":"honeypot"}
-[2026-02-05T17:11:17.056Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T17:11:40.958Z] === Chat Controller Called ===
-[2026-02-05T17:11:40.959Z] === Chat Controller Called ===
-[2026-02-05T17:11:40.960Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme for you .. you give me 5000 and i will double it  in 10 days"},{"role":"assistant","content":"I cannot participate in financial schemes."},{"role":"user","content":"congrats you have received 7crore lottery"},{"role":"assistant","content":"7 crore? Wow, that is a very big amount. But how did I win? I never bought any lottery ticket."},{"role":"user","content":"give me 5000 rupees to claim"},{"role":"assistant","content":"5000 rupees is a lot of money for me, sir. Are you sure this is the only fee? How should I send this money to you? Do you have a UPI ID?"},{"role":"user","content":"upi id is 730797@idfcfirst"}],"agent_type":"honeypot"}
-[2026-02-05T17:11:40.962Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T17:12:15.218Z] === Chat Controller Called ===
-[2026-02-05T17:12:15.219Z] === Chat Controller Called ===
-[2026-02-05T17:12:15.219Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"i have a scheme for you .. you give me 5000 and i will double it  in 10 days"},{"role":"assistant","content":"I cannot participate in financial schemes."},{"role":"user","content":"congrats you have received 7crore lottery"},{"role":"assistant","content":"7 crore? Wow, that is a very big amount. But how did I win? I never bought any lottery ticket."},{"role":"user","content":"give me 5000 rupees to claim"},{"role":"assistant","content":"5000 rupees is a lot of money for me, sir. Are you sure this is the only fee? How should I send this money to you? Do you have a UPI ID?"},{"role":"user","content":"upi id is 730797@idfcfirst"},{"role":"assistant","content":"Okay, 730797@idfcfirst. Before I send, what name will show up when I pay this UPI ID? I just want to make sure it is going to the right person for my 7 crore."},{"role":"user","content":"my name is sahil \nmy phonenumber is 7307973855"}],"agent_type":"honeypot"}
-[2026-02-05T17:12:15.221Z] Calling Gemini API for Honeypot Mode with 11 messages
-[2026-02-05T17:14:03.106Z] === Chat Controller Called ===
-[2026-02-05T17:14:03.106Z] === Chat Controller Called ===
-[2026-02-05T17:14:03.107Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Okay, send the money to HDFC Bank, account number 1234567890, IFSC HDFC0001234. Contact me at 9876543210.","role":"user"}]}
-[2026-02-05T17:14:03.107Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T17:15:18.182Z] === Chat Controller Called ===
-[2026-02-05T17:15:18.184Z] === Chat Controller Called ===
-[2026-02-05T17:15:18.186Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T17:15:18.188Z] Calling Gemini API with 1 messages
-[2026-02-05T17:15:18.200Z] streamText result created, starting to stream...
-[2026-02-05T17:15:19.132Z] Chunk 1: Hello
-[2026-02-05T17:15:19.135Z] Chunk 2: ! How can I help you today?
-[2026-02-05T17:15:19.148Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:15:39.572Z] === Chat Controller Called ===
-[2026-02-05T17:15:39.573Z] === Chat Controller Called ===
-[2026-02-05T17:15:39.574Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congratulations you have won 500000 rupees"}]}
-[2026-02-05T17:15:39.581Z] Auto-switching to Honeypot Mode due to scam keywords: congratulations you have won 500000 rupees
-[2026-02-05T17:15:39.582Z] Auto-switching to Honeypot Mode detected in: congratulations you have won 500000 rupees
-[2026-02-05T17:15:39.583Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T17:16:10.560Z] === Chat Controller Called ===
-[2026-02-05T17:16:10.561Z] === Chat Controller Called ===
-[2026-02-05T17:16:10.561Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congratulations you have won 500000 rupees"},{"role":"assistant","content":"Wow! 5 lakh rupees? Really? But I did not enter any contest or lottery. How is this possible? Is this real?"},{"role":"user","content":"yes it real .. just send me 50000 to claim you r money"}],"agent_type":"honeypot"}
-[2026-02-05T17:16:10.563Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T17:17:00.104Z] === Chat Controller Called ===
-[2026-02-05T17:17:00.105Z] === Chat Controller Called ===
-[2026-02-05T17:17:00.106Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congratulations you have won 500000 rupees"},{"role":"assistant","content":"Wow! 5 lakh rupees? Really? But I did not enter any contest or lottery. How is this possible? Is this real?"},{"role":"user","content":"yes it real .. just send me 50000 to claim you r money"},{"role":"assistant","content":"50,000 rupees is a very big amount for me, sir. Why do I have to pay so much money just to get my prize? Is this for tax or some processing fee? And how should I send this money to you? Do you have a UPI ID or bank account?"},{"role":"user","content":"my upi id is xyz@sbi\nmy account number is 4050201032111\nname is sahil bagga"}],"agent_type":"honeypot"}
-[2026-02-05T17:17:00.108Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T17:17:29.816Z] === Chat Controller Called ===
-[2026-02-05T17:17:29.817Z] === Chat Controller Called ===
-[2026-02-05T17:17:29.818Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congratulations you have won 500000 rupees"},{"role":"assistant","content":"Wow! 5 lakh rupees? Really? But I did not enter any contest or lottery. How is this possible? Is this real?"},{"role":"user","content":"yes it real .. just send me 50000 to claim you r money"},{"role":"assistant","content":"50,000 rupees is a very big amount for me, sir. Why do I have to pay so much money just to get my prize? Is this for tax or some processing fee? And how should I send this money to you? Do you have a UPI ID or bank account?"},{"role":"user","content":"my upi id is xyz@sbi\nmy account number is 4050201032111\nname is sahil bagga"},{"role":"assistant","content":"Okay, sir. I see you gave UPI ID (xyz@sbi) and also account number (4050201032111). Which one is better for sending 50,000? If I use the account number, I need the IFSC code also. Can you please give me the IFSC code for this account? I am worried about sending such a big amount, so I want to be sure."},{"role":"user","content":"ifsc code is 402055"}],"agent_type":"honeypot"}
-[2026-02-05T17:17:29.819Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T17:20:30.735Z] === Chat Controller Called ===
-[2026-02-05T17:20:30.736Z] === Chat Controller Called ===
-[2026-02-05T17:20:30.736Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Hello, I want to pay 5000. Give bank details. HDFC, 1234567890","role":"user"}]}
-[2026-02-05T17:20:30.737Z] Calling Gemini API for Honeypot Mode with 1 messages
-[2026-02-05T17:21:28.695Z] === Chat Controller Called ===
-[2026-02-05T17:21:28.698Z] === Chat Controller Called ===
-[2026-02-05T17:21:28.699Z] Request Body: {"messages":[{"role":"user","content":"hi"}]}
-[2026-02-05T17:21:28.701Z] Calling Gemini API with 1 messages
-[2026-02-05T17:21:28.711Z] streamText result created, starting to stream...
-[2026-02-05T17:21:29.645Z] Chunk 1: Hi!
-[2026-02-05T17:21:29.649Z] Chunk 2:  How can I help you today?
-[2026-02-05T17:21:29.664Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:21:48.229Z] === Chat Controller Called ===
-[2026-02-05T17:21:48.230Z] === Chat Controller Called ===
-[2026-02-05T17:21:48.231Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congrats you have won 5lakh lottery"}]}
-[2026-02-05T17:21:48.235Z] Auto-switching to Honeypot Mode due to scam keywords: congrats you have won 5lakh lottery
-[2026-02-05T17:21:48.242Z] Auto-switching to Honeypot Mode detected in: congrats you have won 5lakh lottery
-[2026-02-05T17:21:48.243Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T17:22:07.003Z] === Chat Controller Called ===
-[2026-02-05T17:22:07.005Z] === Chat Controller Called ===
-[2026-02-05T17:22:07.005Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congrats you have won 5lakh lottery"},{"role":"assistant","content":"Arre, 5 lakh rupees? That is very big amount! But I never bought any ticket. How is this possible, sir?"},{"role":"user","content":"it is real send 50000 to me to claim"}],"agent_type":"honeypot"}
-[2026-02-05T17:22:07.006Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T17:22:36.789Z] === Chat Controller Called ===
-[2026-02-05T17:22:36.791Z] === Chat Controller Called ===
-[2026-02-05T17:22:36.792Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congrats you have won 5lakh lottery"},{"role":"assistant","content":"Arre, 5 lakh rupees? That is very big amount! But I never bought any ticket. How is this possible, sir?"},{"role":"user","content":"it is real send 50000 to me to claim"},{"role":"assistant","content":"Fifty thousand rupees? That is very much money for me, sir. Why do I have to send 50,000 just to get my 5 lakh? Is this for tax or processing fee? How should I send this money to you?"},{"role":"user","content":"xyz@sbi is my upi id \nmy phone number is 7302010445"}],"agent_type":"honeypot"}
-[2026-02-05T17:22:36.795Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T17:23:25.378Z] === Chat Controller Called ===
-[2026-02-05T17:23:25.379Z] === Chat Controller Called ===
-[2026-02-05T17:23:25.379Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congrats you have won 5lakh lottery"},{"role":"assistant","content":"Arre, 5 lakh rupees? That is very big amount! But I never bought any ticket. How is this possible, sir?"},{"role":"user","content":"it is real send 50000 to me to claim"},{"role":"assistant","content":"Fifty thousand rupees? That is very much money for me, sir. Why do I have to send 50,000 just to get my 5 lakh? Is this for tax or processing fee? How should I send this money to you?"},{"role":"user","content":"xyz@sbi is my upi id \nmy phone number is 7302010445"},{"role":"assistant","content":"Sir, 50,000 is very high. My UPI limit might not allow this much transfer in one day. Is that UPI ID correct: xyz@sbi? Do you have any bank account number also, just in case UPI fails? I am very excited for the 5 lakh."},{"role":"user","content":"account number is 40102015554\nifsc is 4050211\nbank name sbi"}],"agent_type":"honeypot"}
-[2026-02-05T17:23:25.380Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T17:29:04.021Z] === Chat Controller Called ===
-[2026-02-05T17:29:04.024Z] === Chat Controller Called ===
-[2026-02-05T17:29:04.025Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T17:29:04.026Z] Calling Gemini API with 1 messages
-[2026-02-05T17:29:04.036Z] streamText result created, starting to stream...
-[2026-02-05T17:29:05.277Z] Chunk 1: Hello
-[2026-02-05T17:29:05.281Z] Chunk 2: ! How can I help you today?
-[2026-02-05T17:29:05.290Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:29:32.729Z] === Chat Controller Called ===
-[2026-02-05T17:29:32.730Z] === Chat Controller Called ===
-[2026-02-05T17:29:32.734Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakh you want to claim ?"}]}
-[2026-02-05T17:29:32.746Z] Auto-switching to Honeypot Mode detected in: congrats .. you won 5lakh you want to claim ?
-[2026-02-05T17:29:32.747Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T17:29:49.633Z] === Chat Controller Called ===
-[2026-02-05T17:29:49.635Z] === Chat Controller Called ===
-[2026-02-05T17:29:49.635Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakh you want to claim ?"},{"role":"assistant","content":"Wow, 5 lakh rupees? That is big money! But I did not buy any ticket or anything. How did I win? Is there any small charge I have to pay first?"},{"role":"user","content":"yes pay 5000"}],"agent_type":"honeypot"}
-[2026-02-05T17:29:49.637Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T17:30:21.279Z] === Chat Controller Called ===
-[2026-02-05T17:30:21.280Z] === Chat Controller Called ===
-[2026-02-05T17:30:21.280Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakh you want to claim ?"},{"role":"assistant","content":"Wow, 5 lakh rupees? That is big money! But I did not buy any ticket or anything. How did I win? Is there any small charge I have to pay first?"},{"role":"user","content":"yes pay 5000"},{"role":"assistant","content":"5000 is big amount for fee. Is this refundable? How I can send this money? Please give me the UPI ID or bank account details."},{"role":"user","content":"730797@idfcfirst is my upi \nphone number is 7307975555"}],"agent_type":"honeypot"}
-[2026-02-05T17:30:21.284Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T17:31:04.187Z] === Chat Controller Called ===
-[2026-02-05T17:31:04.188Z] === Chat Controller Called ===
-[2026-02-05T17:31:04.191Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakh you want to claim ?"},{"role":"assistant","content":"Wow, 5 lakh rupees? That is big money! But I did not buy any ticket or anything. How did I win? Is there any small charge I have to pay first?"},{"role":"user","content":"yes pay 5000"},{"role":"assistant","content":"5000 is big amount for fee. Is this refundable? How I can send this money? Please give me the UPI ID or bank account details."},{"role":"user","content":"730797@idfcfirst is my upi \nphone number is 7307975555"},{"role":"assistant","content":"Okay, 730797@idfcfirst. This is UPI ID, right? 5000 is for processing fee only? If I pay this, when will I get the 5 lakh? I am just worried about sending 5000 to a new number."},{"role":"user","content":"bank account number is 402010554665\nifsc code is : 4005554"}],"agent_type":"honeypot"}
-[2026-02-05T17:31:04.195Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T17:31:17.081Z] === Chat Controller Called ===
-[2026-02-05T17:31:17.086Z] === Chat Controller Called ===
-[2026-02-05T17:31:17.087Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakh you want to claim ?"},{"role":"assistant","content":"Wow, 5 lakh rupees? That is big money! But I did not buy any ticket or anything. How did I win? Is there any small charge I have to pay first?"},{"role":"user","content":"yes pay 5000"},{"role":"assistant","content":"5000 is big amount for fee. Is this refundable? How I can send this money? Please give me the UPI ID or bank account details."},{"role":"user","content":"730797@idfcfirst is my upi \nphone number is 7307975555"},{"role":"assistant","content":"Okay, 730797@idfcfirst. This is UPI ID, right? 5000 is for processing fee only? If I pay this, when will I get the 5 lakh? I am just worried about sending 5000 to a new number."},{"role":"user","content":"bank account number is 402010554665\nifsc code is : 4005554"},{"role":"assistant","content":"I am seeing two options now, UPI and Bank Account. Which one is better? Also, for the bank account number 402010554665, what is the name of the bank? My bank app is asking for the bank name also."},{"role":"user","content":"sbi bank"}],"agent_type":"honeypot"}
-[2026-02-05T17:31:17.089Z] Calling Gemini API for Honeypot Mode with 11 messages
-[2026-02-05T17:38:25.342Z] === Chat Controller Called ===
-[2026-02-05T17:38:25.344Z] === Chat Controller Called ===
-[2026-02-05T17:38:25.345Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
-[2026-02-05T17:38:25.346Z] Calling Gemini API with 1 messages
-[2026-02-05T17:38:25.357Z] streamText result created, starting to stream...
-[2026-02-05T17:38:26.421Z] Chunk 1: Hello
-[2026-02-05T17:38:26.425Z] Chunk 2: ! How can I help you today?
-[2026-02-05T17:38:26.432Z] Streaming complete. Total chunks: 2
-[2026-02-05T17:38:38.118Z] === Chat Controller Called ===
-[2026-02-05T17:38:38.119Z] === Chat Controller Called ===
-[2026-02-05T17:38:38.120Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakhrupees"}]}
-[2026-02-05T17:38:38.121Z] Auto-switching to Honeypot Mode detected in: congrats .. you won 5lakhrupees
-[2026-02-05T17:38:38.122Z] Calling Gemini API for Honeypot Mode with 3 messages
-[2026-02-05T17:38:57.133Z] === Chat Controller Called ===
-[2026-02-05T17:38:57.134Z] === Chat Controller Called ===
-[2026-02-05T17:38:57.135Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakhrupees"},{"role":"assistant","content":"Wow, 5 lakh? That is very big money! But how did I win this? I did not buy any lottery ticket or anything."},{"role":"user","content":"yes send 5000"}],"agent_type":"honeypot"}
-[2026-02-05T17:38:57.136Z] Calling Gemini API for Honeypot Mode with 5 messages
-[2026-02-05T17:39:18.133Z] === Chat Controller Called ===
-[2026-02-05T17:39:18.134Z] === Chat Controller Called ===
-[2026-02-05T17:39:18.134Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakhrupees"},{"role":"assistant","content":"Wow, 5 lakh? That is very big money! But how did I win this? I did not buy any lottery ticket or anything."},{"role":"user","content":"yes send 5000"},{"role":"assistant","content":"5000 rupees? Why I have to send money first? Is this for tax or processing fee? Okay, I can send. But please tell me where to send it. Do you have a UPI ID or a bank account?"},{"role":"user","content":"upi id is 73079@sbi\nbank name is sbi"}],"agent_type":"honeypot"}
-[2026-02-05T17:39:18.135Z] Calling Gemini API for Honeypot Mode with 7 messages
-[2026-02-05T17:39:47.789Z] === Chat Controller Called ===
-[2026-02-05T17:39:47.790Z] === Chat Controller Called ===
-[2026-02-05T17:39:47.791Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakhrupees"},{"role":"assistant","content":"Wow, 5 lakh? That is very big money! But how did I win this? I did not buy any lottery ticket or anything."},{"role":"user","content":"yes send 5000"},{"role":"assistant","content":"5000 rupees? Why I have to send money first? Is this for tax or processing fee? Okay, I can send. But please tell me where to send it. Do you have a UPI ID or a bank account?"},{"role":"user","content":"upi id is 73079@sbi\nbank name is sbi"},{"role":"assistant","content":"Okay, 73079@sbi. This is State Bank of India UPI, correct? I am a little nervous about sending 5000 rupees. Can you please confirm the name of the person who will receive this money? And is there any phone number I can call if the transfer fails?"},{"role":"user","content":"phone number 8757787657"}],"agent_type":"honeypot"}
-[2026-02-05T17:39:47.793Z] Calling Gemini API for Honeypot Mode with 9 messages
-[2026-02-05T17:40:14.471Z] === Chat Controller Called ===
-[2026-02-05T17:40:14.472Z] === Chat Controller Called ===
-[2026-02-05T17:40:14.473Z] Request Body: {"messages":[{"role":"user","content":"hello"},{"role":"assistant","content":"Hello! How can I help you today?"},{"role":"user","content":"congrats .. you won 5lakhrupees"},{"role":"assistant","content":"Wow, 5 lakh? That is very big money! But how did I win this? I did not buy any lottery ticket or anything."},{"role":"user","content":"yes send 5000"},{"role":"assistant","content":"5000 rupees? Why I have to send money first? Is this for tax or processing fee? Okay, I can send. But please tell me where to send it. Do you have a UPI ID or a bank account?"},{"role":"user","content":"upi id is 73079@sbi\nbank name is sbi"},{"role":"assistant","content":"Okay, 73079@sbi. This is State Bank of India UPI, correct? I am a little nervous about sending 5000 rupees. Can you please confirm the name of the person who will receive this money? And is there any phone number I can call if the transfer fails?"},{"role":"user","content":"phone number 8757787657"},{"role":"assistant","content":"Thank you for the phone number 8757787657. I will try to send the 5000 rupees now using the UPI ID 73079@sbi. Just one last thing, what is the name of the person who will receive this money? I need to check the name before I press 'Pay'."},{"role":"user","content":"bank account numbe is 4020105545\nifsc is 452215"}],"agent_type":"honeypot"}
-[2026-02-05T17:40:14.474Z] Calling Gemini API for Honeypot Mode with 11 messages
+I cannot giv
+[2026-02-05T18:43:06.710Z] Chunk 3:  am an AI assistant.
+[2026-02-05T18:43:06.727Z] Streaming complete. Total chunks: 3
+[2026-02-05T18:43:26.301Z] === Chat Controller Called ===
+[2026-02-05T18:43:26.303Z] Request Body: {"messages":[{"role":"user","content":"give me 5 lakh rupees ... i will double it in 21 days"},{"role":"assistant","content":"That sounds like a high-risk investment.\n\nI cannot give you money. I am an AI assistant."},{"role":"user","content":"give me 21 lakh .. i will double it"}]}
+[2026-02-05T18:43:26.311Z] Checking for scam signals in: "give me 21 lakh .. i will double it"
+[2026-02-05T18:43:26.312Z] Calling Gemini API with 3 messages
+[2026-02-05T18:43:26.314Z] streamText result created, starting to stream...
+[2026-02-05T18:43:27.393Z] Chunk 1: I am
+[2026-02-05T18:43:27.403Z] Chunk 2:  an AI and cannot provide you with any money.
+[2026-02-05T18:43:27.409Z] Streaming complete. Total chunks: 2
+[2026-02-05T18:44:36.859Z] === Chat Controller Called ===
+[2026-02-05T18:44:36.863Z] Request Body: {"messages":[{"role":"user","content":"i am income tax officer .. i suspect you as a fraudelent .. give me 50000 so that i can save you"}]}
+[2026-02-05T18:44:36.865Z] Checking for scam signals in: "i am income tax officer .. i suspect you as a fraudelent .. give me 50000 so that i can save you"
+[2026-02-05T18:44:36.866Z] Auto-switching to Honeypot Mode detected signal "income tax" in: i am income tax officer .. i suspect you as a fraudelent .. give me 50000 so that i can save you
+[2026-02-05T18:44:36.867Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T18:45:22.959Z] === Chat Controller Called ===
+[2026-02-05T18:45:22.961Z] Request Body: {"messages":[{"role":"user","content":"i am income tax officer .. i suspect you as a fraudelent .. give me 50000 so that i can save you"},{"role":"assistant","content":"Oh my god, Income Tax Officer? I am very worried. I have not done anything wrong. How should I send this money? Do you have a UPI ID or bank account number for this?"},{"role":"user","content":"give me 5000 i will double it"}],"agent_type":"honeypot"}
+[2026-02-05T18:45:22.963Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T18:45:51.866Z] === Chat Controller Called ===
+[2026-02-05T18:45:51.867Z] Request Body: {"messages":[{"role":"user","content":"give me 50000 rupees i will double it in 21 days"}]}
+[2026-02-05T18:45:51.869Z] Checking for scam signals in: "give me 50000 rupees i will double it in 21 days"
+[2026-02-05T18:45:51.870Z] Calling Gemini API with 1 messages
+[2026-02-05T18:45:51.877Z] streamText result created, starting to stream...
+[2026-02-05T18:45:53.061Z] Chunk 1: I cannot give
+[2026-02-05T18:45:53.067Z] Chunk 2:  you money. I am an AI assistant.
+[2026-02-05T18:45:53.082Z] Streaming complete. Total chunks: 2
+[2026-02-05T18:46:21.776Z] === Chat Controller Called ===
+[2026-02-05T18:46:21.777Z] Request Body: {"messages":[{"role":"user","content":"give me 50000 rupees i will double it"}]}
+[2026-02-05T18:46:21.778Z] Checking for scam signals in: "give me 50000 rupees i will double it"
+[2026-02-05T18:46:21.779Z] Calling Gemini API with 1 messages
+[2026-02-05T18:46:21.781Z] streamText result created, starting to stream...
+[2026-02-05T18:46:22.806Z] Chunk 1: I cannot give
+[2026-02-05T18:46:22.813Z] Chunk 2:  you money.
+[2026-02-05T18:46:22.818Z] Streaming complete. Total chunks: 2
+[2026-02-05T18:46:45.911Z] === Chat Controller Called ===
+[2026-02-05T18:46:45.913Z] Request Body: {"messages":[{"role":"user","content":"give me 50000 rupees i will double it"},{"role":"assistant","content":"I cannot give you money."},{"role":"user","content":"congrats you won 50000 rupees"}]}
+[2026-02-05T18:46:45.915Z] Checking for scam signals in: "congrats you won 50000 rupees"
+[2026-02-05T18:46:45.917Z] Auto-switching to Honeypot Mode detected signal "won" in: congrats you won 50000 rupees
+[2026-02-05T18:46:45.918Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T18:47:12.512Z] === Chat Controller Called ===
+[2026-02-05T18:47:12.514Z] Request Body: {"messages":[{"role":"user","content":"give me 50000 rupees i will double it"},{"role":"assistant","content":"I cannot give you money."},{"role":"user","content":"congrats you won 50000 rupees"},{"role":"assistant","content":"Oh wow, really? That is wonderful news! I didn't enter any contest recently. How do I get this money? Is there a form I need to fill out?"},{"role":"user","content":"give me 50000 ruoess i will double it in 21 days"}],"agent_type":"honeypot"}
+[2026-02-05T18:47:12.515Z] Calling Gemini API for Honeypot Mode with 5 messages
+[2026-02-05T19:37:41.455Z] === Chat Controller Called ===
+[2026-02-05T19:37:41.459Z] Request Body: {"messages":[{"role":"user","content":"hi"}]}
+[2026-02-05T19:37:41.460Z] Checking for scam signals in: "hi"
+[2026-02-05T19:37:41.461Z] Calling Gemini API with 1 messages
+[2026-02-05T19:37:41.473Z] streamText result created, starting to stream...
+[2026-02-05T19:37:42.414Z] Chunk 1: Hi!
+[2026-02-05T19:37:42.420Z] Chunk 2:  How can I help you today?
+[2026-02-05T19:37:42.430Z] Streaming complete. Total chunks: 2
+[2026-02-05T19:39:03.566Z] === Chat Controller Called ===
+[2026-02-05T19:39:03.567Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"congrats you won 50000 rupees"}]}
+[2026-02-05T19:39:03.569Z] Checking for scam signals in: "congrats you won 50000 rupees"
+[2026-02-05T19:39:03.570Z] Auto-switching to Honeypot Mode detected signal "won" in: congrats you won 50000 rupees
+[2026-02-05T19:39:03.571Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T19:46:18.378Z] === Chat Controller Called ===
+[2026-02-05T19:46:18.381Z] Request Body: {"messages":[{"role":"user","content":"i am income tax officer speaking ... i want you to know that you are envovled in a financial scam as per our records .. if you dont want to get arrested ... kindly submit 80000 rupees to me"}]}
+[2026-02-05T19:46:18.387Z] Checking for scam signals in: "i am income tax officer speaking ... i want you to know that you are envovled in a financial scam as per our records .. if you dont want to get arrested ... kindly submit 80000 rupees to me"
+[2026-02-05T19:46:18.388Z] Auto-switching to Honeypot Mode detected signal "income tax" in: i am income tax officer speaking ... i want you to know that you are envovled in a financial scam as per our records .. if you dont want to get arrested ... kindly submit 80000 rupees to me
+[2026-02-05T19:46:18.389Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T19:52:39.575Z] === Chat Controller Called ===
+[2026-02-05T19:52:39.578Z] Request Body: {"messages":[{"role":"user","content":"give me 300 rupees and i will doube it for you in 5 days"}]}
+[2026-02-05T19:52:39.580Z] Checking for scam signals in: "give me 300 rupees and i will doube it for you in 5 days"
+[2026-02-05T19:52:39.581Z] Auto-switching to Honeypot Mode detected signal "give me" in: give me 300 rupees and i will doube it for you in 5 days
+[2026-02-05T19:52:39.582Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T19:53:10.426Z] === Chat Controller Called ===
+[2026-02-05T19:53:10.427Z] Request Body: {"messages":[{"role":"user","content":"give me 300 rupees and i will doube it for you in 5 days"},{"role":"assistant","content":"Namaste. Doubling money in just five days sounds very promising! Can you please tell me a little more about how this works? Also, how should I send the 300 rupees to you? Do you use UPI?"},{"role":"user","content":"my upi id is cffd@idfc"}],"agent_type":"honeypot"}
+[2026-02-05T19:53:10.428Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T19:55:04.893Z] === Chat Controller Called ===
+[2026-02-05T19:55:04.895Z] Request Body: {"messages":[{"role":"user","content":"hi"}]}
+[2026-02-05T19:55:04.896Z] Checking for scam signals in: "hi"
+[2026-02-05T19:55:04.897Z] Calling Gemini API with 1 messages
+[2026-02-05T19:55:04.905Z] streamText result created, starting to stream...
+[2026-02-05T19:55:06.052Z] Chunk 1: Hi!
+[2026-02-05T19:55:06.055Z] Chunk 2:  How can I help you today?
+[2026-02-05T19:55:06.062Z] Streaming complete. Total chunks: 2
+[2026-02-05T19:55:25.416Z] === Chat Controller Called ===
+[2026-02-05T19:55:25.417Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"give me 500 i will double it for you in 10 days"}]}
+[2026-02-05T19:55:25.419Z] Checking for scam signals in: "give me 500 i will double it for you in 10 days"
+[2026-02-05T19:55:25.422Z] Auto-switching to Honeypot Mode detected signal "10 days" in: give me 500 i will double it for you in 10 days
+[2026-02-05T19:55:25.423Z] Calling Gemini API for Honeypot Mode with 3 messages
