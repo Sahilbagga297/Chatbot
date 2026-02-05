@@ -265,6 +265,42 @@ export default function ChatUI() {
                     </div>
                   )}
 
+                  {/* Bank Names */}
+                  {extractedIntelligence.bank_names?.length > 0 && (
+                    <div className="space-y-1">
+                      <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider">Bank Names</h4>
+                      <ul className="space-y-1">
+                        {extractedIntelligence.bank_names.map((name: string, i: number) => (
+                          <li key={i} className="text-sm font-mono bg-red-100 text-red-800 p-1 rounded px-2 break-all">{name}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* IFSC Codes */}
+                  {extractedIntelligence.ifsc_codes?.length > 0 && (
+                    <div className="space-y-1">
+                      <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider">IFSC Codes</h4>
+                      <ul className="space-y-1">
+                        {extractedIntelligence.ifsc_codes.map((code: string, i: number) => (
+                          <li key={i} className="text-sm font-mono bg-red-100 text-red-800 p-1 rounded px-2 break-all">{code}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Phone Numbers */}
+                  {extractedIntelligence.phone_numbers?.length > 0 && (
+                    <div className="space-y-1">
+                      <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider">Phone Numbers</h4>
+                      <ul className="space-y-1">
+                        {extractedIntelligence.phone_numbers.map((num: string, i: number) => (
+                          <li key={i} className="text-sm font-mono bg-red-100 text-red-800 p-1 rounded px-2 break-all">{num}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
                   {/* Links */}
                   {extractedIntelligence.phishing_links?.length > 0 && (
                     <div className="space-y-1">
@@ -280,6 +316,9 @@ export default function ChatUI() {
                   {/* No Intel */}
                   {(!extractedIntelligence.upi_ids?.length &&
                     !extractedIntelligence.bank_accounts?.length &&
+                    !extractedIntelligence.bank_names?.length &&
+                    !extractedIntelligence.ifsc_codes?.length &&
+                    !extractedIntelligence.phone_numbers?.length &&
                     !extractedIntelligence.phishing_links?.length) && (
                       <p className="text-sm text-slate-500">No specific intelligence extracted yet.</p>
                     )}

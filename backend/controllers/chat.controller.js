@@ -84,25 +84,42 @@ export const chatController = async (req, res) => {
             // Try to parse the response as JSON to ensure it's valid
             try {
                 // Find JSON content if it's wrapped in markdown code blocks
+                // Find JSON content. 
+                // 1. Try to find content within ```json ... ``` or ``` ... ```
+                // 2. If that fails, look for the first '{' and last '}'
                 let jsonContent = result.text;
-                const jsonMatch = result.text.match(/```json\n([\s\S]*?)\n```/) || result.text.match(/```\n([\s\S]*?)\n```/);
-                if (jsonMatch) {
-                    jsonContent = jsonMatch[1];
+                const codeBlockMatch = result.text.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+                if (codeBlockMatch) {
+                    jsonContent = codeBlockMatch[1];
+                } else {
+                    const firstBrace = result.text.indexOf('{');
+                    const lastBrace = result.text.lastIndexOf('}');
+                    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+                        jsonContent = result.text.substring(firstBrace, lastBrace + 1);
+                    }
                 }
 
                 const jsonResponse = JSON.parse(jsonContent);
                 return res.json(jsonResponse);
             } catch (e) {
                 console.error("Failed to parse Honeypot JSON:", e);
-                // Fallback: return the text wrapped in a basic structure
+                // Fallback: return the text as the agent_reply
+                // If the model failed to output JSON, it likely just outputted the reply text.
                 return res.json({
-                    is_scam: false,
-                    scam_type: "unknown",
-                    agent_reply: result.text,
-                    agent_stage: "unknown",
-                    extracted_intelligence: {},
+                    is_scam: true, // We are in honeypot mode, so it's safe to assume scam
+                    scam_type: "suspected",
+                    agent_reply: result.text, // Use the raw text as the reply
+                    agent_stage: "engage",
+                    extracted_intelligence: {
+                        upi_ids: [],
+                        bank_accounts: [],
+                        bank_names: [],
+                        ifsc_codes: [],
+                        phone_numbers: [],
+                        phishing_links: []
+                    },
                     law_enforcement_ready: false,
-                    error: "Failed to parse JSON response"
+                    error: "JSON_PARSE_FALLBACK"
                 });
             }
         }
