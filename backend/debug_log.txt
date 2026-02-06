@@ -164,3 +164,110 @@ I cannot giv
 [2026-02-05T19:55:25.419Z] Checking for scam signals in: "give me 500 i will double it for you in 10 days"
 [2026-02-05T19:55:25.422Z] Auto-switching to Honeypot Mode detected signal "10 days" in: give me 500 i will double it for you in 10 days
 [2026-02-05T19:55:25.423Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T20:12:12.846Z] === Chat Controller Called ===
+[2026-02-05T20:12:12.849Z] Request Body: {"messages":[{"role":"user","content":"hi"}]}
+[2026-02-05T20:12:12.851Z] Checking for scam signals in: "hi"
+[2026-02-05T20:12:12.852Z] Calling Gemini API with 1 messages
+[2026-02-05T20:12:12.861Z] streamText result created, starting to stream...
+[2026-02-05T20:12:13.891Z] Chunk 1: Hi!
+[2026-02-05T20:12:13.901Z] Chunk 2:  How can I help you today?
+[2026-02-05T20:12:13.911Z] Streaming complete. Total chunks: 2
+[2026-02-05T20:12:33.365Z] === Chat Controller Called ===
+[2026-02-05T20:12:33.366Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"send me 50000 and i will double it in 5 days"}]}
+[2026-02-05T20:12:33.380Z] Checking for scam signals in: "send me 50000 and i will double it in 5 days"
+[2026-02-05T20:12:33.382Z] Auto-switching to Honeypot Mode detected signal "send me" in: send me 50000 and i will double it in 5 days
+[2026-02-05T20:12:33.384Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T21:22:47.919Z] === Chat Controller Called ===
+[2026-02-05T21:22:47.923Z] Request Body: {"messages":[{"role":"user","content":"give me 10000 rupees i will double it"}]}
+[2026-02-05T21:22:47.924Z] Checking for scam signals in: "give me 10000 rupees i will double it"
+[2026-02-05T21:22:47.926Z] Auto-switching to Honeypot Mode detected signal "give me" in: give me 10000 rupees i will double it
+[2026-02-05T21:22:47.927Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T21:23:24.762Z] === Chat Controller Called ===
+[2026-02-05T21:23:24.764Z] Request Body: {"messages":[{"role":"user","content":"give me 10000 rupees i will double it"},{"role":"assistant","content":"Wow, doubling money sounds very good! How exactly does this work? Is this some kind of investment? And how should I send the 10,000 rupees to you? Do you use UPI or bank transfer?"},{"role":"user","content":"send me money via upi"}],"agent_type":"honeypot"}
+[2026-02-05T21:23:24.765Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-05T21:23:38.757Z] === Chat Controller Called ===
+[2026-02-05T21:23:38.758Z] Request Body: {"messages":[{"role":"user","content":"give me 10000 rupees i will double it"},{"role":"assistant","content":"Wow, doubling money sounds very good! How exactly does this work? Is this some kind of investment? And how should I send the 10,000 rupees to you? Do you use UPI or bank transfer?"},{"role":"user","content":"send me money via upi"},{"role":"assistant","content":"Okay, UPI is easy. Can you please share your UPI ID? Also, just to be clear, how long does it take to double the money once I send it? Is there any paperwork needed?"},{"role":"user","content":"452452@idfcfirst"}],"agent_type":"honeypot"}
+[2026-02-05T21:23:38.760Z] Calling Gemini API for Honeypot Mode with 5 messages
+[2026-02-05T21:24:32.645Z] === Chat Controller Called ===
+[2026-02-05T21:24:32.646Z] Request Body: {"messages":[{"role":"user","content":"hey can you send me 10000 i will triple it and give it to you"}]}
+[2026-02-05T21:24:32.647Z] Checking for scam signals in: "hey can you send me 10000 i will triple it and give it to you"
+[2026-02-05T21:24:32.647Z] Auto-switching to Honeypot Mode detected signal "send me" in: hey can you send me 10000 i will triple it and give it to you
+[2026-02-05T21:24:32.648Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-05T21:25:14.784Z] === Chat Controller Called ===
+[2026-02-05T21:25:14.786Z] Request Body: {"messages":[{"role":"user","content":"hey can you send me 10000 i will triple it and give it to you"},{"role":"assistant","content":"Hello. Tripling 10,000 sounds very good! That is a lot of money. Can you please tell me how this tripling works? Is it some kind of investment plan?"},{"role":"user","content":"well it stock market kind of thing ... just send me the money"}],"agent_type":"honeypot"}
+[2026-02-05T21:25:14.790Z] Calling Gemini API for Honeypot Mode with 3 messages
+[2026-02-06T08:50:57.571Z] === Chat Controller Called ===
+[2026-02-06T08:50:57.573Z] Request Body: {"messages":[{"role":"user","content":"hi"}]}
+[2026-02-06T08:50:57.575Z] Checking for scam signals in: "hi"
+[2026-02-06T08:50:57.577Z] Calling Gemini API with 1 messages
+[2026-02-06T08:50:57.587Z] streamText result created, starting to stream...
+[2026-02-06T08:50:59.244Z] Chunk 1: Hi!
+[2026-02-06T08:50:59.251Z] Chunk 2:  How can I help you today?
+[2026-02-06T08:50:59.259Z] Streaming complete. Total chunks: 2
+[2026-02-06T08:51:26.981Z] === Chat Controller Called ===
+[2026-02-06T08:51:26.981Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"how is weather today in jaipur"}]}
+[2026-02-06T08:51:26.985Z] Checking for scam signals in: "how is weather today in jaipur"
+[2026-02-06T08:51:26.987Z] Calling Gemini API with 3 messages
+[2026-02-06T08:51:26.989Z] streamText result created, starting to stream...
+[2026-02-06T08:51:28.022Z] Chunk 1: I
+[2026-02-06T08:51:28.025Z] Chunk 2:  need the current date to give you the most accura
+[2026-02-06T08:51:28.029Z] Streaming complete. Total chunks: 2
+[2026-02-06T08:51:54.200Z] === Chat Controller Called ===
+[2026-02-06T08:51:54.201Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"how is weather today in jaipur"},{"role":"assistant","content":"I need the current date to give you the most accurate weather information for Jaipur."},{"role":"user","content":"well today is 6th february 2026"}]}
+[2026-02-06T08:51:54.202Z] Checking for scam signals in: "well today is 6th february 2026"
+[2026-02-06T08:51:54.203Z] Calling Gemini API with 5 messages
+[2026-02-06T08:51:54.205Z] streamText result created, starting to stream...
+[2026-02-06T08:51:56.819Z] Chunk 1: I cannot provide a specific weather forecast for F
+[2026-02-06T08:51:56.846Z] Chunk 2:  by:
+
+*   **Cool and pleasant winter weather.**
+* 
+[2026-02-06T08:51:56.850Z] Chunk 3: °F).
+[2026-02-06T08:51:56.855Z] Streaming complete. Total chunks: 3
+[2026-02-06T08:52:36.068Z] === Chat Controller Called ===
+[2026-02-06T08:52:36.069Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"how is weather today in jaipur"},{"role":"assistant","content":"I need the current date to give you the most accurate weather information for Jaipur."},{"role":"user","content":"well today is 6th february 2026"},{"role":"assistant","content":"I cannot provide a specific weather forecast for February 6, 2026, as that date is too far in the future.\n\nHistorically, early February in Jaipur is characterized by:\n\n*   **Cool and pleasant winter weather.**\n*   **Average Highs:** Around 22°C (72°F).\n*   **Average Lows:** Around 10°C (50°F)."},{"role":"user","content":"what is today's date"}]}
+[2026-02-06T08:52:36.074Z] Checking for scam signals in: "what is today's date"
+[2026-02-06T08:52:36.076Z] Calling Gemini API with 7 messages
+[2026-02-06T08:52:36.078Z] streamText result created, starting to stream...
+[2026-02-06T08:52:37.905Z] Chunk 1: Today is June 10, 202
+[2026-02-06T08:52:37.908Z] Chunk 2: 4.
+[2026-02-06T08:52:37.913Z] Streaming complete. Total chunks: 2
+[2026-02-06T08:54:33.927Z] === Chat Controller Called ===
+[2026-02-06T08:54:33.928Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"Hi! How can I help you today?"},{"role":"user","content":"how is weather today in jaipur"},{"role":"assistant","content":"I need the current date to give you the most accurate weather information for Jaipur."},{"role":"user","content":"well today is 6th february 2026"},{"role":"assistant","content":"I cannot provide a specific weather forecast for February 6, 2026, as that date is too far in the future.\n\nHistorically, early February in Jaipur is characterized by:\n\n*   **Cool and pleasant winter weather.**\n*   **Average Highs:** Around 22°C (72°F).\n*   **Average Lows:** Around 10°C (50°F)."},{"role":"user","content":"what is today's date"},{"role":"assistant","content":"Today is June 10, 2024."},{"role":"user","content":"what is today's date"}]}
+[2026-02-06T08:54:33.929Z] Checking for scam signals in: "what is today's date"
+[2026-02-06T08:54:33.931Z] Calling Gemini API with 9 messages
+[2026-02-06T08:54:33.933Z] streamText result created, starting to stream...
+[2026-02-06T08:54:35.377Z] Chunk 1: Today is June 
+[2026-02-06T08:54:35.391Z] Chunk 2: 10, 2024.
+[2026-02-06T08:54:35.411Z] Streaming complete. Total chunks: 2
+[2026-02-06T08:54:59.849Z] === Chat Controller Called ===
+[2026-02-06T08:54:59.850Z] Request Body: {"messages":[{"role":"user","content":"what is today's date"}]}
+[2026-02-06T08:54:59.857Z] Checking for scam signals in: "what is today's date"
+[2026-02-06T08:54:59.859Z] Calling Gemini API with 1 messages
+[2026-02-06T08:54:59.863Z] streamText result created, starting to stream...
+[2026-02-06T08:55:00.934Z] Chunk 1: I
+[2026-02-06T08:55:00.945Z] Chunk 2:  don't have access to real-time information like t
+[2026-02-06T08:55:00.958Z] Streaming complete. Total chunks: 2
+[2026-02-06T08:56:31.213Z] === Chat Controller Called ===
+[2026-02-06T08:56:31.214Z] Request Body: {"messages":[{"role":"user","content":"what is today's date"}]}
+[2026-02-06T08:56:31.215Z] Checking for scam signals in: "what is today's date"
+[2026-02-06T08:56:31.216Z] Calling Gemini API with 1 messages
+[2026-02-06T08:56:31.217Z] streamText result created, starting to stream...
+[2026-02-06T08:56:33.623Z] Chunk 1: June 1, 2024.
+[2026-02-06T08:56:33.626Z] Streaming complete. Total chunks: 1
+[2026-02-06T10:04:18.669Z] === Chat Controller Called ===
+[2026-02-06T10:04:18.671Z] Request Body: {"messages":[{"role":"user","content":"hi"},{"role":"assistant","content":"CRITICAL: Response generation failed. Check system logs."},{"role":"user","content":"hi"}]}
+[2026-02-06T10:04:18.673Z] Checking for scam signals in: "hi"
+[2026-02-06T10:04:18.674Z] Calling Gemini API with 3 messages
+[2026-02-06T10:04:18.714Z] streamText result created, starting to stream...
+[2026-02-06T10:04:20.090Z] Chunk 1: Hello
+[2026-02-06T10:04:20.094Z] Chunk 2: ! How can I help you today?
+[2026-02-06T10:04:20.104Z] Streaming complete. Total chunks: 2
+[2026-02-06T10:06:30.158Z] === Chat Controller Called ===
+[2026-02-06T10:06:30.160Z] Request Body: {"messages":[{"role":"user","content":"hello"}]}
+[2026-02-06T10:06:30.161Z] Checking for scam signals in: "hello"
+[2026-02-06T10:06:30.163Z] Calling Gemini API with 1 messages
+[2026-02-06T10:06:30.197Z] streamText result created, starting to stream...
+[2026-02-06T10:06:31.074Z] Chunk 1: Hello! How can
+[2026-02-06T10:06:31.086Z] Chunk 2:  I help you today?
+[2026-02-06T10:06:31.096Z] Streaming complete. Total chunks: 2

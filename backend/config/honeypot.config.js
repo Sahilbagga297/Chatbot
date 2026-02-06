@@ -15,7 +15,7 @@ export const honeypotConfig = {
             "Link-based Phishing Scam"
         ],
         linguistic_signals: {
-            urgency: ["urgent", "immediately", "today", "last chance", "account will be blocked", "10 days", "limited time", "expires"],
+            urgency: ["urgent", "immediately", "last chance", "account will be blocked", "limited time", "expires"],
             financial_request: ["pay", "send money", "processing fee", "registration fee", "upi", "bank transfer", "send me", "transfer", "give me", "deposit"],
             authority_claims: ["bank executive", "RBI", "government", "income tax", "customs", "police"],
             reward_lures: ["won", "congratulations", "lottery", "prize", "cash reward", "scheme", "double your money", "invest", "double it", "doubling", "returns"],

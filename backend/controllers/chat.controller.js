@@ -44,7 +44,13 @@ export const chatController = async (req, res) => {
                     ...signals.links_and_actions
                 ];
 
-                const match = allKeywords.find(keyword => text.includes(keyword.toLowerCase()));
+                const match = allKeywords.find(keyword => {
+                    // Escape special regex characters in the keyword
+                    const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    // Create a regex for whole word matching
+                    const regex = new RegExp(`\\b${escapedKeyword}\\b`, 'i');
+                    return regex.test(text);
+                });
 
                 if (match) {
                     console.log(`Auto-switching to Honeypot Mode (Scam Signal Detected: "${match}")`);
@@ -129,11 +135,13 @@ export const chatController = async (req, res) => {
 
         logToFile(`Calling Gemini API with ${messages.length} messages`);
 
+        const currentDate = new Date().toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
         const result = streamText({
             model: google("gemini-flash-latest"),
             messages,
             system:
-                "You are a helpful, concise chat assistant. Prefer short, clear messages. Use bullet points when listing items.",
+                `You are a helpful, concise chat assistant. Prefer short, clear messages. Use bullet points when listing items. Current date: ${currentDate}.`,
         });
 
         console.log("streamText result created, starting to stream...");
