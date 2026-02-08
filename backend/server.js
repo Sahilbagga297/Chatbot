@@ -32,7 +32,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 const corsOptions = {
-    origin: process.env.FRONTEND_BASE_URL || "*",
+    origin: "*",
     credentials: true
 };
 app.use(cors(corsOptions));
