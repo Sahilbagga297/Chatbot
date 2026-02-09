@@ -39,11 +39,11 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
-app.use("/api", chatRoutes);
+app.use(chatRoutes);
 
 // Health check
 app.get("/", (req, res) => {
-    res.send("Backend is running");
+    res.send("Backend is running ... go to /chat route to use the chatbot");
 });
 
 app.listen(PORT, () => {
