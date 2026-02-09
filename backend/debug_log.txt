@@ -277,3 +277,6 @@ I cannot giv
 [2026-02-09T18:22:07.378Z] === Chat Controller Called ===
 [2026-02-09T18:22:07.379Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Congratulations! You won a lottery of ,000. Send  processing fee to claim it.","role":"user"}]}
 [2026-02-09T18:22:07.380Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-09T18:31:40.681Z] === Chat Controller Called ===
+[2026-02-09T18:31:40.682Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Congratulations! You won a lottery of ,000. Send  processing fee to claim it.","role":"user"}]}
+[2026-02-09T18:31:40.683Z] Calling Gemini API for Honeypot Mode with 1 messages

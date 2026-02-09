@@ -33,10 +33,23 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 const corsOptions = {
     origin: "*",
-    credentials: true
+    origin: "*",
+    credentials: true,
+    allowedHeaders: "*"
 };
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// Permissive API Key Logger (Does not block, just logs)
+app.use((req, res, next) => {
+    const apiKey = req.headers['x-api-key'];
+    if (apiKey) {
+        console.log(`Received Request with API Key: ${apiKey}`);
+    } else {
+        console.log("Received Request without API Key");
+    }
+    next(); // Allow everyone
+});
 
 // Routes
 app.use(chatRoutes);
