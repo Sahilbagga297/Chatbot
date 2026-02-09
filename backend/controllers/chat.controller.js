@@ -106,6 +106,10 @@ export const chatController = async (req, res) => {
                         ifsc_codes: [],
                         phone_numbers: [],
                         phishing_links: []
+                    },
+                    engagement_metrics: {
+                        turn_count: messages.length + 1, // Current messages + the new response
+                        duration_seconds: null // Not tracking duration statelessly yet
                     }
                 };
 
@@ -127,6 +131,10 @@ export const chatController = async (req, res) => {
                         ifsc_codes: [],
                         phone_numbers: [],
                         phishing_links: []
+                    },
+                    engagement_metrics: {
+                        turn_count: messages.length + 1,
+                        duration_seconds: null
                     },
                     error: "JSON_PARSE_FALLBACK"
                 });

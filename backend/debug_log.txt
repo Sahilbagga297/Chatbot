@@ -271,3 +271,9 @@ I cannot giv
 [2026-02-06T10:06:31.074Z] Chunk 1: Hello! How can
 [2026-02-06T10:06:31.086Z] Chunk 2:  I help you today?
 [2026-02-06T10:06:31.096Z] Streaming complete. Total chunks: 2
+[2026-02-09T18:21:43.492Z] === Chat Controller Called ===
+[2026-02-09T18:21:43.494Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Congratulations! You won a lottery of ,000. Send  processing fee to claim it.","role":"user"}]}
+[2026-02-09T18:21:43.494Z] Calling Gemini API for Honeypot Mode with 1 messages
+[2026-02-09T18:22:07.378Z] === Chat Controller Called ===
+[2026-02-09T18:22:07.379Z] Request Body: {"agent_type":"honeypot","messages":[{"content":"Congratulations! You won a lottery of ,000. Send  processing fee to claim it.","role":"user"}]}
+[2026-02-09T18:22:07.380Z] Calling Gemini API for Honeypot Mode with 1 messages
