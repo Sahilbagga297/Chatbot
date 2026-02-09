@@ -19,7 +19,31 @@ export const chatController = async (req, res) => {
     console.log("Request body:", JSON.stringify(req.body, null, 2));
 
     try {
-        const { messages, agent_type } = req.body;
+        let { messages, agent_type } = req.body;
+
+        // ADAPTER: Handle Mock Scammer API format
+        if (!messages && req.body.message) {
+            console.log("Detected Mock Scammer API format. Adapting...");
+            messages = [];
+
+            // 1. Add conversation history
+            if (req.body.conversationHistory && Array.isArray(req.body.conversationHistory)) {
+                req.body.conversationHistory.forEach(msg => {
+                    messages.push({
+                        role: msg.sender === 'agent' ? 'assistant' : 'user',
+                        content: msg.text
+                    });
+                });
+            }
+
+            // 2. Add the current new message
+            if (req.body.message && req.body.message.text) {
+                messages.push({
+                    role: 'user',
+                    content: req.body.message.text
+                });
+            }
+        }
 
         if (!messages || messages.length === 0) {
             console.log("ERROR: No messages in request body");

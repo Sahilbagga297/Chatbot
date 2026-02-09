@@ -287,3 +287,5 @@ I cannot giv
 [2026-02-09T18:42:31.616Z] Request Body: {"agent_type":"honeypot"}
 [2026-02-09T18:42:31.663Z] === Chat Controller Called ===
 [2026-02-09T18:42:31.664Z] Request Body: {}
+[2026-02-09T18:52:23.071Z] === Chat Controller Called ===
+[2026-02-09T18:52:23.072Z] Request Body: {"message":{"sender":"scammer","timestamp":1770663047110,"text":"URGENT: Your SBI account has been compromised. Your account will be blocked in 2 hours. Share your account number and OTP immediately to verify your identity."},"conversationHistory":[],"metadata":{"channel":"SMS","language":"English","locale":"IN"},"sessionId":"6002bbc9-50e6-4f42-bfa9-0c86ab94e4f1"}
